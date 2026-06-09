@@ -1,0 +1,42 @@
+/* ───────────────── SECTION LAYOUTS ───────────────── */
+
+.section {
+  @apply px-6 lg:px-16 py-24;
+}
+
+.section-sm {
+  @apply px-6 lg:px-16 py-16;
+}
+
+.section-lg {
+  @apply px-6 lg:px-16 py-32;
+}
+
+/* CENTER CONTAINER */
+
+.container-lg {
+  @apply max-w-[1440px]
+  mx-auto;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .section,
+  .section-sm,
+  .section-lg {
+    @apply px-5;
+  }
+
+  .section {
+    @apply py-20;
+  }
+
+  .section-sm {
+    @apply py-16;
+  }
+
+  .section-lg {
+    @apply py-24;
+  }
+}
