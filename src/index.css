@@ -1861,7 +1861,8 @@
 
 .about-intro {
   @apply grid
-  grid-cols-1 lg:grid-cols-[1fr_800px]
+  grid-cols-1
+  lg:grid-cols-[1fr_1.2fr]
   px-6 lg:px-12
   pt-12
   pb-6
