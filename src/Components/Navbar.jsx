@@ -12,7 +12,7 @@ const services = [
 const navLinks = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
-  { label: "Business", path: "/business" },
+  { label: "Our Businesses", path: "/business" },
   { label: "Why Us", path: "/why_us" },
   { label: "Careers", path: "/careers" },
   { label: "Contact", path: "/contact" },
@@ -85,7 +85,12 @@ const Navbar = () => {
           </li>
 
           {/* DROPDOWN — click to toggle */}
-          <li className="navbar__dropdown" ref={dropdownRef}>
+          <li
+            className="navbar__dropdown"
+            ref={dropdownRef}
+            onMouseEnter={() => setDropdownOpen(true)}
+            onMouseLeave={() => setDropdownOpen(false)}
+          >
             <div className="navbar__dropdown-trigger">
               <NavLink
                 to="/business"
@@ -93,7 +98,7 @@ const Navbar = () => {
                   isActive ? "nav-link active" : "nav-link"
                 }
               >
-                Our Business
+                Our Businesses
               </NavLink>
 
               <button

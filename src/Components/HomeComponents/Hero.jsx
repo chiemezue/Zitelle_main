@@ -9,16 +9,15 @@ const slides = [
     alt: "Zitelle Cooking Oil",
     title: (
       <>
-        Pure <span className="hl-yellow">Cooking Oil Made</span>
+        Powering Local Manufacturers in{" "}
+        <span className="hl-yellow">Nigeria</span>
         <br />
-        For Homes
-        <br />
-        And Businesses
+        Four Sectors at a time
       </>
     ),
-    sub: "Refined palm kernel oil produced to support households, food businesses, soap manufacturers, and industrial users with reliable quality and consistent supply.",
-    cta: "Explore",
-    link: "/services/cooking-oil",
+    sub: "Across oil, soap, packaging and wood products, Zitelle Group delivers quality products for homes, businesses and industries.",
+    cta: "Explore our Businesses",
+    link: "/business",
   },
   {
     id: 2,
@@ -26,16 +25,14 @@ const slides = [
     alt: "Zitelle Soap Manufacturing",
     title: (
       <>
-        Everyday <span className="hl-yellow">Cleanliness</span>
+        Built on <span className="hl-yellow">Consistency</span>
         <br />
-        Backed By Quality
-        <br />
-        Production
+        Trusted Everyday
       </>
     ),
-    sub: "Manufactured from carefully selected oil-based raw materials, Zitelle Soap delivers practical, affordable, and dependable cleaning solutions for everyday use.",
-    cta: "Explore",
-    link: "/services/soap",
+    sub: "For over a decade, Zitelle has operated with discipline, improving our processes and delivering dependable products customers can rely on.",
+    cta: "Who We Are",
+    link: "/about",
   },
   {
     id: 3,
@@ -43,16 +40,14 @@ const slides = [
     alt: "TATA & BOBO Plywood",
     title: (
       <>
-        Quality <span className="hl-yellow">Plywood</span>
+        Responsible Manufacturing,
         <br />
-        Built For Construction
-        <br />
-        And Furniture
+        Practical Impact
       </>
     ),
-    sub: "Through TATA & BOBO, we supply dependable plywood and board products trusted by furniture makers, contractors, interior designers, and distributors.",
-    cta: "Explore",
-    link: "/services/plywood",
+    sub: "From production waste to by-products and raw materials, we focus on using resources wisely, and creating value across every division",
+    cta: "Lear More",
+    link: "/contact",
   },
   {
     id: 4,
@@ -60,16 +55,14 @@ const slides = [
     alt: "Zitelle Packaging Solutions",
     title: (
       <>
-        Durable <span className="hl-yellow">Packaging</span>
+        Quality at every <span className="hl-yellow">Stage</span>
         <br />
-        Designed For
-        <br />
-        Every Journey
+        Value in Every Process
       </>
     ),
     sub: "We manufacture strong plastic jerrycans used for edible oils, liquid products, industrial packaging, and bulk commercial supply across multiple industries.",
-    cta: "Explore",
-    link: "/services/packaging",
+    cta: "Why Us",
+    link: "/why_us",
   },
 ];
 

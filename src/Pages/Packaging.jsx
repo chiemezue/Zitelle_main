@@ -4,7 +4,13 @@ import ProductHero from "../Components/ProductComp/ProductHero";
 import ProductGrid from "../Components/ProductComp/ProductGrid.jsx";
 import WhoWeServe from "../Components/ProductComp/WhoWeServe.jsx";
 
-import { Factory, ShoppingCart, Package, Warehouse, Truck } from "lucide-react";
+import {
+  FlaskConical,
+  Droplets,
+  Store,
+  Building2,
+  PackageCheck,
+} from "lucide-react";
 
 const Packaging = () => {
   return (
@@ -25,7 +31,11 @@ const Packaging = () => {
       <ProductHero
         label="About"
         title="Reliable Packaging For Every Product"
-        text="Zitelle Packaging Solutions manufactures durable plastic containers and packaging products designed for food, oil, chemical, and industrial applications. We focus on quality materials, consistency, and dependable supply to help businesses package and distribute their products with confidence."
+        text="Zitelle manufactures durable plastic jerrycans from scratch for both our own oil packaging and external commercial supply. By producing our jerrycans in-house, we maintain greater control over quality, consistency, strength and availability. 
+        
+        Our jerrycans are designed for practical handling, storage, and transportation of liquid products, making them suitable for businesses, distributors, manufacturers, and bulk packaging customers. 
+
+        "
         image="/zitelle pictures/lab4.jpg"
         primaryText="Request A Quote"
         primaryLink="/contact"
@@ -50,7 +60,7 @@ const Packaging = () => {
           {
             id: 2,
             category: "Plastic Containers",
-            name: "10 Litres",
+            name: "9 Litres",
             description:
               "Strong and reliable packaging solution for cooking oil distribution.",
             image: "/zitelle pictures/10litres.jpg",
@@ -85,23 +95,24 @@ const Packaging = () => {
         image="/zitelle pictures/10litres.jpg"
         items={[
           {
-            icon: <Factory size={20} />,
-            text: "Food and beverage manufacturers",
+            icon: <Droplets size={20} />,
+            text: "Edible oil producers and packagers",
           },
-
           {
-            icon: <Package size={20} />,
-            text: "Cooking oil producers and distributors",
+            icon: <FlaskConical size={20} />,
+            text: "Liquid product manufacturers",
           },
-
           {
-            icon: <ShoppingCart size={20} />,
+            icon: <Building2 size={20} />,
+            text: "Commercial and industrial suppliers",
+          },
+          {
+            icon: <Store size={20} />,
             text: "Retail and wholesale businesses",
           },
-
           {
-            icon: <Warehouse size={20} />,
-            text: "Industrial and commercial suppliers",
+            icon: <PackageCheck size={20} />,
+            text: "Businesses requiring jerrycans in bulk",
           },
         ]}
       />
