@@ -5,7 +5,7 @@ import HeroStats from "../HeroStats";
 const slides = [
   {
     id: 1,
-    src: "/zitelle pictures/machine4.jpg",
+    src: "/zitelle/hero1.jpg",
     alt: "Zitelle Cooking Oil",
     title: (
       <>
@@ -21,7 +21,7 @@ const slides = [
   },
   {
     id: 2,
-    src: "/zitelle pictures/zitelle trucks 2.jpg",
+    src: "/zitelle/hero2.jpg",
     alt: "Zitelle Soap Manufacturing",
     title: (
       <>
@@ -36,7 +36,7 @@ const slides = [
   },
   {
     id: 3,
-    src: "/zitelle pictures/people in factory.jpg",
+    src: "/zitelle/hero3.jpg",
     alt: "TATA & BOBO Plywood",
     title: (
       <>
@@ -51,7 +51,7 @@ const slides = [
   },
   {
     id: 4,
-    src: "/zitelle pictures/sorroundings3.jpg",
+    src: "/zitelle/hero4.jpg",
     alt: "Zitelle Packaging Solutions",
     title: (
       <>

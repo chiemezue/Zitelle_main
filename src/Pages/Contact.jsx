@@ -8,7 +8,7 @@ const Contact = () => {
       <PageHero
         title="Contact"
         highlight="Us"
-        image="/zitelle pictures/environment.png"
+        image="/zitelle/contact.jpg"
         breadcrumb={
           <>
             <span className="page-hero__crumb">Home /</span>

@@ -6,13 +6,13 @@ const AboutSection = () => {
   /* ───────── IMAGES ───────── */
 
   const images = [
-    "/zitelle pictures/18litres.jpg",
+    "/zitelle/about1.jpg",
 
-    "/zitelle pictures/soap1.jpg",
+    "/zitelle/about2.jpg",
 
-    "/zitelle pictures/plywood1.jpg",
+    "/zitelle/about3.jpg",
 
-    "/zitelle pictures/lab 2.jpg",
+    "/zitelle/about4.jpg",
   ];
 
   const [currentImage, setCurrentImage] = useState(0);

@@ -15,8 +15,7 @@ const teamMembers = [
     role: "Managing Director",
     description:
       "Leads the overall operations of the Group, ensuring excellence, innovation, and sustainable business growth.",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop",
+    image: "public/zitelle/Chimfurumnanya.jpg",
   },
 
   {
@@ -24,8 +23,7 @@ const teamMembers = [
     role: "General Manager (Awka)",
     description:
       "Oversees business operations and strategic execution across the Awka division.",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1200&auto=format&fit=crop",
+    image: "/zitelle/Stella Akunyiba.jpg",
   },
 
   {
@@ -60,8 +58,7 @@ const teamMembers = [
     role: "Financial Controller (Awka)",
     description:
       "Manages budgeting, financial reporting, and internal financial controls for the Awka operations.",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop",
+    image: "/zitelle/Emmanuel Edobor.jpg",
   },
 
   {
@@ -69,8 +66,7 @@ const teamMembers = [
     role: "Head of Audit & Internal Control",
     description:
       "Ensures accountability, risk management, compliance, and strong internal control systems.",
-    image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200&auto=format&fit=crop",
+    image: "/zitelle/Nonso Oyeoka.jpg",
   },
 
   {
@@ -78,8 +74,7 @@ const teamMembers = [
     role: "Accountant",
     description:
       "Supports financial operations through accurate accounting, reporting, and regulatory compliance.",
-    image:
-      "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop",
+    image: "/zitelle/Romanus Idiemerio.jpg",
   },
 
   {
@@ -87,8 +82,7 @@ const teamMembers = [
     role: "Head of Human Resource",
     description:
       "Leads talent acquisition, employee development, workplace culture, and people management initiatives.",
-    image:
-      "https://images.unsplash.com/photo-1504257432389-52343af06ae3?q=80&w=1200&auto=format&fit=crop",
+    image: "/zitelle/Kenneth Anuforo.jpg",
   },
 
   {
@@ -96,8 +90,7 @@ const teamMembers = [
     role: "Head of Sales & Marketing",
     description:
       "Drives market expansion, customer engagement, revenue growth, and brand development across the Group.",
-    image:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1200&auto=format&fit=crop",
+    image: "/zitelle/Uche Onuorah.jpg",
   },
 ];
 

@@ -13,7 +13,7 @@ const CookingOil = () => {
       <PageHero
         title="Cooking"
         highlight="Oil"
-        image="/zitelle pictures/lab 1.jpg"
+        image="/zitelle/oilhero.jpg"
         breadcrumb={
           <>
             <span className="page-hero__crumb">Home /</span>
@@ -27,7 +27,7 @@ const CookingOil = () => {
         label="About"
         title="Pal, Kernel Refined Oil /Palm Kernel Refined Oil"
         text="Our refined palm Kernel Oil is processed to meet the needs of businesses that require a reliable, versatile, and consistent oil for manufacturing and commercial use. With its clean appearance, stable quality, and wide range of applications, it supports industries such as soap production, food processing, cosmetics, and other industrial formulations."
-        image="/zitelle pictures/lab4.jpg"
+        image="/zitelle/oil4.jpg"
         primaryText="Request A Quote"
         primaryLink="/contact"
         secondaryText="Speak To Sales"
@@ -44,7 +44,7 @@ const CookingOil = () => {
             name: "4 Litres",
             description:
               "Refined vegetable oil suitable for everyday cooking and frying.",
-            image: "/zitelle pictures/4litres oil2.png",
+            image: "/zitelle/4litres oil.jpg",
             link: "/contact",
           },
 
@@ -54,7 +54,7 @@ const CookingOil = () => {
             name: "9 Litres",
             description:
               "Convenient packaging designed for daily household use.",
-            image: "/zitelle pictures/10litres oil.png",
+            image: "/zitelle/9litres oil.jpg",
             link: "/contact",
           },
 
@@ -64,7 +64,7 @@ const CookingOil = () => {
             name: "18 Litres",
             description:
               "Large-volume supply for restaurants and food businesses.",
-            image: "/zitelle pictures/18litres oil.png",
+            image: "/zitelle/18litres oil.jpg",
             link: "/contact",
           },
 
@@ -74,7 +74,7 @@ const CookingOil = () => {
             name: "25 Litres",
             description:
               "Consistent quality oil developed for high-volume frying.",
-            image: "/zitelle pictures/25litres oil.png",
+            image: "/zitelle/25litres oil.jpg",
             link: "/contact",
           },
         ]}
@@ -84,7 +84,7 @@ const CookingOil = () => {
       <WhoWeServe
         label="Who We Serve"
         title="Supplying Kitchens And Businesses"
-        image="/zitelle pictures/machine2.jpg"
+        image="/zitelle/oil5.jpg"
         items={[
           {
             icon: <Package size={20} />,

@@ -8,7 +8,7 @@ const BusinessSection = () => {
       title: "Soap",
       description:
         "Zitelle Soap is a versatile multipurpose soap made for everyday cleaning needs. Strong enough for laundry and practical washing, yet suitable for personal bathing use",
-      image: "/zitelle pictures/soap3.jpg",
+      image: "/zitelle/soap1.jpg",
       link: "/services/soap",
     },
 
@@ -24,7 +24,7 @@ const BusinessSection = () => {
       title: "Plastic",
       description:
         "Modern packaging systems designed to preserve product quality and support distribution needs.",
-      image: "/zitelle pictures/18litres.jpg",
+      image: "/zitelle/plastic.jpg",
       link: "/services/packaging",
     },
 
@@ -32,7 +32,7 @@ const BusinessSection = () => {
       title: "Oil",
       description:
         "Our refined palm Kernel Oil is processed to meet the needs of businesses that require a reliable, versatile, and consistent oil for manufacturing and commercial use.",
-      image: "/zitelle pictures/4litres oil2.png",
+      image: "/zitelle/oil1.jpg",
       link: "/services/cooking-oil",
     },
   ];

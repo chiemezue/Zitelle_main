@@ -8,7 +8,7 @@ const CareerForm = () => {
       <PageHero
         title="Job Apply Form"
         highlight=""
-        image="/zitelle pictures/environment.png"
+        image="/zitelle/career1.jpg"
         breadcrumb={
           <>
             <span className="page-hero__crumb">Home /Career/</span>

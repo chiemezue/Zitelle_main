@@ -13,7 +13,7 @@ const Soap = () => {
       <PageHero
         title="Soap"
         highlight="Manufacturing"
-        image="/zitelle pictures/soap2.jpg"
+        image="/zitelle/soap4.jpg"
         breadcrumb={
           <>
             <span className="page-hero__crumb">Home /</span>
@@ -27,7 +27,7 @@ const Soap = () => {
         label="About"
         title="Made for Everyday Cleanliness "
         text="Zitelle Soap is a versatile multipurpose soap made for everyday cleaning needs. Strong enough for laundry and practical washing, yet suitable for personal bathing use, it is designed to serve households, businesses, and everyday users who need one dependable soap for different purposes."
-        image="/zitelle pictures/soap1.jpg"
+        image="/zitelle/soap3.jpg"
         primaryText="Request A Quote"
         primaryLink="/contact"
         secondaryText="Speak To Sales"
@@ -44,7 +44,7 @@ const Soap = () => {
             name: "Multipurpose Bar Soap",
             description:
               "Suitable for laundry, dishwashing, and general household cleaning.",
-            image: "/zitelle pictures/soap2.jpg",
+            image: "/zitelle/soap6.jpg",
             link: "/contact",
           },
 
@@ -54,7 +54,7 @@ const Soap = () => {
             name: "Premium Bath Soap",
             description:
               "Gentle cleansing soap formulated for everyday personal hygiene.",
-            image: "/zitelle pictures/soap3.jpg",
+            image: "/zitelle/soap7.jpg",
             link: "/contact",
           },
 
@@ -64,7 +64,7 @@ const Soap = () => {
             name: "Industrial Cleaning Soap",
             description:
               "Reliable cleaning solution for hotels, schools, and institutions.",
-            image: "/zitelle pictures/soap1.jpg",
+            image: "/zitelle/soap8.jpg",
             link: "/contact",
           },
 
@@ -74,7 +74,7 @@ const Soap = () => {
             name: "Detergent Soap",
             description:
               "Effective stain removal with long-lasting cleaning performance.",
-            image: "/zitelle pictures/soap4.jpg",
+            image: "/zitelle/soap9.jpg",
             link: "/contact",
           },
         ]}

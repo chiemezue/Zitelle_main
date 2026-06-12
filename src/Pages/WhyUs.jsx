@@ -18,7 +18,7 @@ const whySections = [
 
     extra: `For over a decade, we have operated with discipline and resilience, working seven days a week to improve our processes, strengthen our products, and serve homes, businesses, and industries with reliability. `,
 
-    image: "/zitelle pictures/office.jpg",
+    image: "/zitelle/why_us.jpg",
   },
 ];
 
@@ -28,7 +28,7 @@ const WhyUs = () => {
       <PageHero
         title="Why Us"
         highlight=""
-        image="/zitelle pictures/environment.png"
+        image="/zitelle/why_us_hero.jpg"
         breadcrumb={
           <>
             <span className="page-hero__crumb">Home /</span>

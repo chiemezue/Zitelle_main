@@ -10,7 +10,7 @@ const AboutCommit = () => {
         text="Zitelle Group is committed to:"
         // buttonLink="/careers"
         // buttonText="Careers"
-        image="/zitelle pictures/machine4.jpg"
+        image="/zitelle/factory2.jpg"
         items={[
           "Quality — We work to maintain dependable standards across our products and production processes.",
           "Reliability — We understand that customers, distributors, and businesses depend on consistent supply.",

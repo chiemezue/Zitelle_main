@@ -2014,8 +2014,9 @@
 
 .team__image {
   @apply w-full
-  h-[420px]
+  h-[500px]
   object-cover
+  object-top
   transition-transform
   duration-500;
 }
@@ -2093,45 +2094,31 @@
   }
 }
 
-/* ───────────────── MOBILE ───────────────── */
-
 @media (max-width: 768px) {
   .team {
     @apply py-16;
   }
 
   .team__wrapper {
-    @apply px-0;
+    @apply px-5;
   }
 
   .team__slider {
     @apply flex
-    gap-5
-    overflow-x-auto
-    px-5;
-
-    scrollbar-width: none;
-  }
-
-  .team__slider::-webkit-scrollbar {
-    display: none;
+    flex-col
+    gap-12;
   }
 
   .team__card {
-    @apply shrink-0
-    w-[88vw];
+    @apply w-full;
   }
 
   .team__image {
-    @apply h-[340px];
+    @apply h-[420px];
   }
 
   .team__profile {
     @apply bottom-[-45px];
-  }
-
-  .team__profile h3 {
-    @apply text-[18px];
   }
 
   .team__body {
@@ -2139,37 +2126,6 @@
     pt-16
     pb-8;
   }
-
-  .team__body p {
-    @apply text-[15px]
-    leading-7;
-  }
-}
-
-.team__label {
-  @apply flex
-  items-center
-  justify-center
-  gap-4
-  mb-6;
-}
-
-.team__label span {
-  font-family: var(--font-body);
-
-  @apply text-[18px]
-  font-semibold
-  tracking-[3px]
-  uppercase;
-
-  color: var(--color-primary);
-}
-
-.team__label-line {
-  @apply h-[2px]
-  w-12;
-
-  background: var(--color-primary);
 }
 
 /* ───────────────── CAREER ROLES ───────────────── */

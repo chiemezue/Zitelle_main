@@ -8,7 +8,7 @@ const businesses = [
     categories: "Household",
     description:
       "Zitelle Soap is a versatile multipurpose soap made for everyday cleaning needs. Strong enough for laundry and practical washing, yet suitable for personal bathing use, it is designed to serve households, businesses, and everyday users who need one dependable soap for different purposes. ",
-    image: "/zitelle pictures/soap3.jpg",
+    image: "/zitelle/soap1.jpg",
     path: "/services/soap",
   },
   {
@@ -24,7 +24,7 @@ const businesses = [
     categories: "Commercial",
     description:
       "Zitelle manufactures durable plastic jerrycans from scratch for both our own oil packaging and external commercial supply. By producing our jerrycans in-house, we maintain greater control over quality, consistency, strength and availability. ",
-    image: "/zitelle pictures/18litres.jpg",
+    image: "/zitelle/plastic1.jpg",
     path: "/services/packaging",
   },
   {
@@ -32,7 +32,7 @@ const businesses = [
     categories: "Edible Oil",
     description:
       "Our refined palm Kernel Oil is processed to meet the needs of businesses that require a reliable, versatile, and consistent oil for manufacturing and commercial use. ",
-    image: "/zitelle pictures/4litres oil2.png",
+    image: "/zitelle/oil3.jpg",
     path: "/services/cooking-oil",
   },
 ];
@@ -45,7 +45,7 @@ const Business = () => {
       <PageHero
         title="Our Businesses"
         highlight=""
-        image="/zitelle pictures/environment.png"
+        image="/zitelle/business1.jpg"
         breadcrumb={
           <>
             <span className="page-hero__crumb">Home /</span>
