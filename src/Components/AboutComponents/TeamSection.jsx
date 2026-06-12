@@ -15,7 +15,7 @@ const teamMembers = [
     role: "Managing Director",
     description:
       "Leads the overall operations of the Group, ensuring excellence, innovation, and sustainable business growth.",
-    image: "public/zitelle/Chimfurumnanya.jpg",
+    image: "/zitelle/Chimfurumnanya.jpg",
   },
 
   {
