@@ -16,7 +16,7 @@ const BusinessSection = () => {
       title: "Plywood",
       description:
         "Our plywood is responsibly sourced and imported from China. We work with consistent specifications and clear order handling to support customers who need dependable availability and predictable supply.  ",
-      image: "/zitelle pictures/plywood5.jpg",
+      image: "/zitelle/plywood5.jpg",
       link: "/services/plywood",
     },
 

@@ -16,7 +16,7 @@ const businesses = [
     categories: "Construction",
     description:
       "TATA & BOBO is Zitelle Group’s plywood business, supplying  a wide range of plywood and board products for furniture making, interior finishing, and construction – focused on providing customers quality, dependable stock, smooth order execution and competitive pricing.",
-    image: "/zitelle pictures/plywood5.jpg",
+    image: "/zitelle/plywood5.jpg",
     path: "/services/plywood",
   },
   {

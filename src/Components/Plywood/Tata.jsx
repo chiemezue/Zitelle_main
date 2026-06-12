@@ -4,7 +4,7 @@ const products = [
   {
     id: "hdf",
     name: "HDF",
-    image: "/zitelle pictures/plywood1.jpg",
+    image: "/zitelle/plywood1.jpg",
     description:
       "High Density Fibreboard in multiple finishes and surface treatments.",
     variants: ["Fresh Core", "Joint Core", "Melamined", "UV Gloss", "Embossed"],
@@ -15,7 +15,7 @@ const products = [
   {
     id: "mdf",
     name: "MDF",
-    image: "/zitelle pictures/plywood2.jpg",
+    image: "/zitelle/plywood2.jpg",
     description:
       "Medium Density Fibreboard — versatile, smooth and easy to finish.",
     variants: ["Melamined", "UV Gloss", "Embossed"],
@@ -26,7 +26,7 @@ const products = [
   {
     id: "marine",
     name: "Marine Plywood",
-    image: "/zitelle pictures/plywood3.jpg",
+    image: "/zitelle/plywood3.jpg",
     description:
       "Moisture-resistant structural plywood for demanding applications.",
     variants: ["Fresh Core", "Joint Core"],
@@ -37,7 +37,7 @@ const products = [
   {
     id: "semi-plastic",
     name: "Semi-Plastic Marine",
-    image: "/zitelle pictures/plywood6.jpg",
+    image: "/zitelle/plywood6.jpg",
     description:
       "Green-faced semi-plastic marine board for heavy-duty applications.",
     variants: ["Green"],
@@ -48,7 +48,7 @@ const products = [
   {
     id: "commercial",
     name: "Commercial Plywood",
-    image: "/zitelle pictures/plywood7.jpg",
+    image: "/zitelle/plywood7.jpg",
     description:
       "General-purpose plywood for furniture and construction projects.",
     variants: ["Brown"],
@@ -59,7 +59,7 @@ const products = [
   {
     id: "door-skin",
     name: "Door Skin",
-    image: "/zitelle pictures/plywood8.jpg",
+    image: "/zitelle/plywood8.jpg",
     description:
       "Decorative door-facing panels available in multiple patterns.",
     variants: ["All Shapes"],
