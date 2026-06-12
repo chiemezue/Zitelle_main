@@ -18,7 +18,7 @@ const Packaging = () => {
       <PageHero
         title="Packaging"
         highlight="Solutions"
-        image="/zitelle pictures/lab3.jpg"
+        image="/zitelle/rubber2.jpg"
         breadcrumb={
           <>
             <span className="page-hero__crumb">Home /</span>
@@ -36,7 +36,7 @@ const Packaging = () => {
         Our jerrycans are designed for practical handling, storage, and transportation of liquid products, making them suitable for businesses, distributors, manufacturers, and bulk packaging customers. 
 
         "
-        image="/zitelle pictures/lab4.jpg"
+        image="/zitelle/rubber1.jpg"
         primaryText="Request A Quote"
         primaryLink="/contact"
         secondaryText="Speak To Sales"
@@ -53,7 +53,7 @@ const Packaging = () => {
             name: "4 Litres ",
             description:
               "Durable food-grade plastic container suitable for oil and liquid products.",
-            image: "/zitelle pictures/4 litres.jpg",
+            image: "/zitelle/4 litres.jpg",
             link: "/contact",
           },
 
@@ -63,7 +63,7 @@ const Packaging = () => {
             name: "9 Litres",
             description:
               "Strong and reliable packaging solution for cooking oil distribution.",
-            image: "/zitelle pictures/10litres.jpg",
+            image: "/zitelle/10litres.jpg",
             link: "/contact",
           },
 
@@ -73,7 +73,7 @@ const Packaging = () => {
             name: "18 Litres",
             description:
               "Heavy-duty plastic container for commercial and industrial use.",
-            image: "/zitelle pictures/18litres.jpg",
+            image: "/zitelle/18litres.jpg",
             link: "/contact",
           },
 
@@ -83,7 +83,7 @@ const Packaging = () => {
             name: "25 Litre",
             description:
               "Large-capacity packaging designed for bulk storage and transportation.",
-            image: "/zitelle pictures/25litres.png",
+            image: "/zitelle/25litres.png",
             link: "/contact",
           },
         ]}
@@ -92,7 +92,7 @@ const Packaging = () => {
       <WhoWeServe
         label="Who We Serve"
         title="Packaging For Businesses That Deliver"
-        image="/zitelle pictures/10litres.jpg"
+        image="/zitelle/rubber3.jpg"
         items={[
           {
             icon: <Droplets size={20} />,

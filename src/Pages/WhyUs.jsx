@@ -46,7 +46,7 @@ const WhyUs = () => {
         text="Zitelle provides reliable manufacturing and distribution support for retailers, wholesalers, and commercial partners. Our systems are built to ensure consistent supply, quality production, and timely delivery across all product lines. We focus on building long-term partnerships through trust, efficiency, and scalable operations."
         buttonLink="/contact"
         buttonText="Contact Us"
-        image="/zitelle pictures/machine4.jpg"
+        image="/zitelle/machine4.jpg"
       />
     </>
   );
