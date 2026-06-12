@@ -23,20 +23,6 @@ const aboutSections = [
     image: "/zitelle/aboutpage1.jpg",
   },
 
-  // {
-  //   id: 2,
-
-  //   label: "What We Do",
-
-  //   title: "Manufacturing With Care And Precision",
-
-  //   text: `From manufacturing to packaging and dependable delivery, we sweat the details so you don’t have to.`,
-
-  //   extra: `Every process is handled with focus, consistency and operational excellence to maintain the standards we stand for.`,
-
-  //   image: "/zitelle pictures/people in factory.jpg",
-  // },
-
   {
     id: 2,
 
@@ -50,6 +36,7 @@ const aboutSections = [
           Our goal is not only to manufacture products, but to keep improving the systems behind those products.`,
 
     extra: `We believe that every product carrying the Zitelle name should reflect care, reliability and usefulness. Whether a customer is buying oil for household use, soap for daily washing, jerrycans for commercial packaging, or wood products for business needs, they should feel confident in the standard behind the product. `,
+
     image: "/zitelle/aboutpage2.jpg",
   },
 ];
