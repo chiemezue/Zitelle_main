@@ -3710,7 +3710,7 @@
 
 .business-pg__label span {
   font-family: var(--font-body);
-  @apply text-[12px] font-semibold
+  @apply text-[1.6rem] font-semibold
   tracking-[3px] uppercase
   text-[var(--color-primary)];
 }

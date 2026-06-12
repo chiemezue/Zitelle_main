@@ -100,12 +100,10 @@ const TeamSection = () => {
       {/* HEADER */}
 
       <div className="team__top">
-        <div className="team__label">
-          <div className="team__label-line"></div>
-
-          <span>OUR EXECUTIVE TEAM</span>
-
-          <div className="team__label-line"></div>
+        <div className="business-pg__label">
+          <div className="business-pg__label-line" />
+          <span>Our Executive Team</span>
+          <div className="business-pg__label-line" />
         </div>
       </div>
 
