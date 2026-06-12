@@ -118,8 +118,13 @@ const Footer = () => {
             <span>
               <strong>Anambra:</strong> Amansea, By Ebenebe Road, Awka North,
               Anambra State.
-              <br />
-              <br />
+            </span>
+          </div>
+
+          <div className="footer__contact-item">
+            <FaMapMarkerAlt />
+
+            <span>
               <strong>Lagos:</strong> 43 Ladipo Street, Off Chicken George
               Roundabout, Mushin, Lagos.
             </span>
