@@ -47,7 +47,7 @@ const BusinessSection = () => {
         <h2 className="about__title">
           <VerticalTextSlider
             staticText="Our Businesses"
-            words={["Soap", "Cooking Oil", "Plywood", "Packaging"]}
+            words={["Soap", "Cooking Oil", "Plywood", "Plastic"]}
           />
         </h2>
 
