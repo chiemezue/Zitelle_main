@@ -85,7 +85,7 @@ const Plywood = () => {
       <WhoWeServe
         label="Who We Serve"
         title="Built For The People Who Build"
-        image="/zitelle pictures/zitelle trucks 2.jpg"
+        image="/zitelle/plywood1.jpg"
         items={[
           {
             icon: <Sofa size={20} />,
