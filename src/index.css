@@ -192,7 +192,8 @@
 
   .section-label span {
     font-family: var(--font-body);
-    @apply text-[18px] font-medium text-[var(--color-nav-sub)];
+    color: var(--color-primary);
+    @apply text-[18px] font-medium;
   }
 
   .section-label--light span {

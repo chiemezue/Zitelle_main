@@ -40,13 +40,13 @@ const BusinessSection = () => {
   return (
     <section className="business">
       <div className="section-top">
-        <div className="section-label">
+        {/* <div className="section-label">
           <span style={{ color: "var(--color-primary)" }}>Our Businesses</span>
-        </div>
+        </div> */}
 
         <h2 className="about__title">
           <VerticalTextSlider
-            staticText="We Manufacture"
+            staticText="Our Businesses"
             words={["Soap", "Cooking Oil", "Plywood", "Packaging"]}
           />
         </h2>
