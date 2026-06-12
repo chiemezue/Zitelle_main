@@ -27,8 +27,11 @@ const ContactSection = () => {
 
               <div>
                 <h4>Address</h4>
-
-                <p>Amansea, By Ebenebe Road, Awka North,Anambra State.</p>
+                <p>Amansea, By Ebenebe Road, Awka North,Anambra State.</p>{" "}
+                <br />
+                <p>
+                  43 Ladipo Street, Off Chicken George Roundabout, Mushin, Lagos
+                </p>
               </div>
             </div>
 
