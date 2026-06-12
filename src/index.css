@@ -1880,7 +1880,7 @@
   @apply flex
   flex-col
   justify-center
-  min-h-[80vh];
+  min-h-[60vh];
 }
 
 /* DESKTOP STICKY IMAGE */
