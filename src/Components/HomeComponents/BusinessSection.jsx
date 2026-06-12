@@ -41,8 +41,7 @@ const BusinessSection = () => {
     <section className="business">
       <div className="section-top">
         <div className="section-label">
-          <span>Our Businesses</span>
-          <div className="section-line"></div>
+          <span style={{ color: "var(--color-primary)" }}>Our Businesses</span>
         </div>
 
         <h2 className="about__title">

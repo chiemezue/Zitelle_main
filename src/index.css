@@ -1740,6 +1740,10 @@
   }
 }
 
+.footer__contact-item strong {
+  @apply text-[var(--color-primary)];
+}
+
 /* ───────── MOBILE ───────── */
 
 @media (max-width: 640px) {

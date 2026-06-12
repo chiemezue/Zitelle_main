@@ -116,8 +116,12 @@ const Footer = () => {
             <FaMapMarkerAlt />
 
             <span>
-              Amansea, By Ebenebe Road, Awka North, Anambra State. <br />
-              43 Ladipo Street, Off Chicken George Roundabout, Mushin, Lagos
+              <strong>Anambra:</strong> Amansea, By Ebenebe Road, Awka North,
+              Anambra State.
+              <br />
+              <br />
+              <strong>Lagos:</strong> 43 Ladipo Street, Off Chicken George
+              Roundabout, Mushin, Lagos.
             </span>
           </div>
 
