@@ -30,7 +30,7 @@ const Footer = () => {
 
           <div className="footer__socials">
             <a
-              href="https://facebook.com"
+              href="hhttps://www.facebook.com/profile.php?id=61576667904221"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -38,7 +38,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/zitellegroup"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -50,7 +50,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://tiktok.com"
+              href="https://youtube.com"
               target="_blank"
               rel="noopener noreferrer"
             >

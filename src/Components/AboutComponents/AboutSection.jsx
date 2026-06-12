@@ -34,7 +34,6 @@ const AboutSection = () => {
       <div className="about__content">
         <div className="section-label">
           <span>WE PRODUCE </span>
-          <div className="section-line"></div>
         </div>
 
         {/* ───────── REUSABLE TYPING COMPONENT ───────── */}
