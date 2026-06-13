@@ -300,8 +300,9 @@
   .navbar {
     @apply fixed top-0 left-0 right-0 z-[100]
   h-[72px] bg-white border-b border-[var(--color-border)]
-  flex items-center px-12
-  transition-transform duration-300 ease-in-out;
+  flex items-center px-12;
+
+    transition: transform 0.3s ease-in-out; /* ← plain CSS, not @apply */
   }
 
   .navbar--hidden {

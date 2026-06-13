@@ -9,10 +9,10 @@ const slides = [
     alt: "Zitelle Cooking Oil",
     title: (
       <>
-        Powering Local Manufacturers in{" "}
-        <span className="hl-yellow">Nigeria</span>
+        Powering Local Manufacturing{" "}
+        <span className="hl-yellow">in Nigeria.</span>
         <br />
-        Four Sectors at a time
+        Four Sectors At A Time...
       </>
     ),
     sub: "Across oil, soap, packaging and wood products, Zitelle Group delivers quality products for homes, businesses and industries.",
@@ -25,9 +25,9 @@ const slides = [
     alt: "Zitelle Soap Manufacturing",
     title: (
       <>
-        Built on <span className="hl-yellow">Consistency</span>
+        Built on <span className="hl-yellow">Consistency,</span>
         <br />
-        Trusted Everyday
+        Sustained By <span className="hl-yellow">Trust</span>
       </>
     ),
     sub: "For over a decade, Zitelle has operated with discipline, improving our processes and delivering dependable products customers can rely on.",
@@ -36,18 +36,18 @@ const slides = [
   },
   {
     id: 3,
-    src: "/zitelle/hero3.jpg",
+    src: "/zitelle/sustain.jpg",
     alt: "TATA & BOBO Plywood",
     title: (
       <>
-        Responsible Manufacturing,
+        Responsible <span className="hl-yellow">Manufacturing,</span>
         <br />
         Practical Impact
       </>
     ),
     sub: "From production waste to by-products and raw materials, we focus on using resources wisely, and creating value across every division",
-    cta: "Lear More",
-    link: "/contact",
+    cta: "Our Sustainability Approach",
+    link: "/about",
   },
   {
     id: 4,

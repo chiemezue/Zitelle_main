@@ -25,18 +25,12 @@ const Navbar = () => {
   const dropdownRef = useRef(null);
 
   /* ───────── HIDE ON SCROLL ───────── */
+  /* ───────── HIDE ON SCROLL ───────── */
   useEffect(() => {
-    let lastScrollY = window.scrollY;
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY && currentScrollY > 80) {
-        setHidden(true);
-      } else {
-        setHidden(false);
-      }
-      lastScrollY = currentScrollY;
+      setHidden(window.scrollY > 1);
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
