@@ -25,7 +25,7 @@ const CookingOil = () => {
 
       <ProductHero
         label="About"
-        title="Pal, Kernel Refined Oil /Palm Kernel Refined Oil"
+        title="Palm Kernel Refined Oil"
         text="Our refined palm Kernel Oil is processed to meet the needs of businesses that require a reliable, versatile, and consistent oil for manufacturing and commercial use. With its clean appearance, stable quality, and wide range of applications, it supports industries such as soap production, food processing, cosmetics, and other industrial formulations."
         image="/zitelle/oil4.jpg"
         primaryText="Request A Quote"

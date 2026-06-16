@@ -39,27 +39,46 @@ const BusinessSection = () => {
 
   return (
     <section className="business">
-      <div className="section-top">
-        {/* <div className="section-label">
-          <span style={{ color: "var(--color-primary)" }}>Our Businesses</span>
-        </div> */}
-
-        <h2 className="about__title">
+      <div className="business-pg__top">
+        <div className="business-pg__label">
+          <div className="business-pg__label-line" />
+          <span>Our Businesses</span>
+          <div className="business-pg__label-line" />
+        </div>
+        <h2 className="business-pg__heading">
+          Four industries. One Standard
+          <br />
+          Built on reliability, quality assurance, and the
+          <br />
+          capacity to deliver at scale.
+        </h2>
+        {/* <p className="business-pg__subtext">
+          Select a business unit to explore what we do.
+        </p> */}
+      </div>
+      {/* <div className="business-section__top">
+        <div className="business-section__heading">
+         
+          <span className="business-section__static">Our Businesses</span>
           <VerticalTextSlider
-            staticText="Our Businesses"
+            staticText=""
             words={["Soap", "Cooking Oil", "Plywood", "Plastic"]}
           />
-        </h2>
-
-        <p className="section-text">
+        </div>
+        <div className="business-pg__label">
+          <div className="business-pg__label-line" />
+          <span>Our Businesses</span>
+          <div className="business-pg__label-line" />
+        </div>
+        <p className="business-section__text">
           Four industries. One standard. We manufacture and supply essential
           products that serve homes, retailers, and businesses across Nigeria.
           Built on reliability, quality assurance, and the capacity to deliver
           at scale.
         </p>
-      </div>
+      </div> */}
 
-      <div className="business__grid">
+      <div className="business-pg__grid">
         {businesses.map((item, index) => (
           <div className="business__card" key={index}>
             <img

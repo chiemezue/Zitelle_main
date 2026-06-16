@@ -15,10 +15,10 @@ const ProductHero = ({
       {/* LEFT */}
 
       <div className="product-hero__content">
-        <div className="product-hero__label">
+        <div className="section-label">
           <span>{label}</span>
 
-          <div className="product-hero__line"></div>
+          <div className="section-line"></div>
         </div>
 
         <h2 className="product-hero__title">{title}</h2>

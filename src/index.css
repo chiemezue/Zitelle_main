@@ -379,8 +379,8 @@
   opacity-0 pointer-events-none
   transition-all duration-200;
 
+    padding-top: 12px; /* this becomes the invisible bridge */
     top: 100%;
-    margin-top: 6px;
     left: 50%;
     transform: translateX(-50%) translateY(-8px);
   }
@@ -848,11 +848,27 @@
   .business {
     @apply w-full
   
-    my-14
+    mt-16 mb-12
   bg-white
   overflow-hidden;
   }
 
+  .business-section__top {
+    @apply flex flex-col items-center text-center max-w-[720px] mx-auto px-6 pt-6 pb-6;
+  }
+
+  .business-section__heading {
+    @apply flex items-center gap-3 mb-6;
+  }
+
+  .business-section__static {
+    @apply font-['EB_Garamond'] text-[3rem] font-semibold text-[var(--color-green)];
+  }
+
+  .business-section__text {
+    @apply text-[1.15rem] leading-[1.85] text-[#555] max-w-[560px] font-normal;
+    font-family: "Inter", sans-serif;
+  }
   /* ───────── TOP CONTENT ───────── */
 
   .business__top {
@@ -3141,6 +3157,7 @@
   @apply text-[clamp(24px,4vw,48px)]
   leading-[1]
   tracking-[-2px]
+  font-semibold
   mt-3
   mb-3;
 }
@@ -3741,7 +3758,7 @@
 
 .business-pg__card {
   @apply relative overflow-hidden;
-  height: 580px;
+  height: 500px;
   cursor: default;
 }
 
