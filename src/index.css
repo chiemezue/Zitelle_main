@@ -568,6 +568,7 @@
     font-family: var(--font-body);
     @apply text-[clamp(14px,1.5vw,18px)]
   font-extralight
+  italic
   text-[rgba(255,255,255,0.82)]
   max-w-[560px]
   leading-[1.7]
