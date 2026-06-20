@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      {/* <AboutSection /> */}
+      <AboutSection />
       <BusinessSection />
       <WhyChooseUs />
       <CareerSection />

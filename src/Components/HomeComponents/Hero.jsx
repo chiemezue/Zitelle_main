@@ -12,7 +12,7 @@ const slides = [
         Powering Local Manufacturing{" "}
         <span className="hl-yellow">in Nigeria.</span>
         <br />
-        Four Sectors At A Time...
+        Five Sectors At A Time...
       </>
     ),
     sub: "Across oil, soap, packaging and wood products, Zitelle Group delivers quality products for homes, businesses and industries.",

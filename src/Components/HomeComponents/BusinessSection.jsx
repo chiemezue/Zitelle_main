@@ -21,7 +21,7 @@ const BusinessSection = () => {
     },
 
     {
-      title: "Plastic",
+      title: "Packaging",
       description:
         "Modern packaging systems designed to preserve product quality and support distribution needs.",
       image: "/zitelle/plastic.jpg",
@@ -46,7 +46,7 @@ const BusinessSection = () => {
           <div className="business-pg__label-line" />
         </div>
         <h2 className="business-pg__heading">
-          Four industries. One Standard
+          Four industries. One Standard.
           <br />
           Built on reliability, quality assurance, and the
           <br />

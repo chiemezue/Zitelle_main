@@ -534,9 +534,8 @@
 
   /* -------------------HERO------------------------- */
   .hero {
-    @apply relative
-  h-screen min-h-[300px]
-  overflow-hidden;
+    @apply relative overflow-hidden;
+    min-height: 120vh;
   }
 
   /* remove .hero__track and .hero__slide entirely */

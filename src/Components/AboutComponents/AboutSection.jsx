@@ -33,13 +33,13 @@ const AboutSection = () => {
 
       <div className="about__content">
         <div className="section-label">
-          <span>WE PRODUCE </span>
+          <span>WHO WE ARE</span>
         </div>
 
         {/* ───────── REUSABLE TYPING COMPONENT ───────── */}
 
         <TypingText
-          text="Quality You Can Trust, From Our Heart to Your Home. "
+          text="DRIVING GROWTH ACROSS INDUSTRIES, COMMUNITIES AND EVERYDAY LIFE. "
           speed={75}
           className="about__title"
         />
