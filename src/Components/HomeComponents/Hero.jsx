@@ -15,7 +15,7 @@ const slides = [
         Five Sectors At A Time...
       </>
     ),
-    sub: "Across oil, soap, packaging and wood products, Zitelle Group delivers quality products for homes, businesses and industries.",
+    sub: "Across oil, soap, packaging and wood products, Zitelle Group delivers quality products for homes, businesses and industries. ",
     cta: "Explore our Businesses",
     link: "/business",
   },
@@ -179,7 +179,6 @@ const Hero = () => {
             />
           </svg>
         </button>
-
         {/* DOTS */}
         <div className="hero__dots" style={{ zIndex: 10 }}>
           {slides.map((_, i) => (
@@ -192,13 +191,14 @@ const Hero = () => {
           ))}
         </div>
       </section>
-      {/* 
+      {/* CAPACITY CARD */}
+
       <div className="hero-stats hero-stats--desktop">
         <HeroStats />
       </div>
       <div className="hero-stats hero-stats--mobile">
         <HeroStats />
-      </div> */}
+      </div>
     </>
   );
 };

@@ -3,21 +3,9 @@ import { Link } from "react-router-dom";
 import TypingText from "../TypingText";
 
 const AboutSection = () => {
-  /* ───────── IMAGES ───────── */
-
-  const images = [
-    "/zitelle/about1.jpg",
-
-    "/zitelle/about2.jpg",
-
-    "/zitelle/about3.jpg",
-
-    "/zitelle/about4.jpg",
-  ];
+  const images = ["/zitelle/who_we_are.jpeg"];
 
   const [currentImage, setCurrentImage] = useState(0);
-
-  /* ───────── IMAGE FADE SLIDER ───────── */
 
   useEffect(() => {
     const slider = setInterval(() => {
@@ -28,60 +16,59 @@ const AboutSection = () => {
   }, [images.length]);
 
   return (
-    <section className="about">
-      {/* ───────── LEFT CONTENT ───────── */}
+    <section className="about-section">
+      {/* LEFT CONTENT */}
 
-      <div className="about__content">
+      <div className="about-section__content">
         <div className="section-label">
           <span>WHO WE ARE</span>
+          <div className="section-line" />
         </div>
 
-        {/* ───────── REUSABLE TYPING COMPONENT ───────── */}
-
         <TypingText
-          text="DRIVING GROWTH ACROSS INDUSTRIES, COMMUNITIES AND EVERYDAY LIFE. "
+          text="DRIVING GROWTH ACROSS INDUSTRIES, COMMUNITIES AND EVERYDAY LIFE."
           speed={75}
           className="about__title"
         />
 
-        <p className="about__text">
-          Zitelle Group is behind the essentials that keep life moving – made
-          with care, produced to standard, and supplied with consistency across
-          Nigeria. From manufacturing to packaging and dependable delivery, we
-          sweat the details so you don’t have to.
+        <p className="about-section__text">
+          Zitelle Group is a Nigerian manufacturing group with a growing
+          presence across essential industries. For over a decade, we have built
+          our business through disciplined production, continuous improvement,
+          and a commitment to quality across edible oils, multipurpose soap,
+          plastic packaging, and wood products.
         </p>
 
-        <p className="about__text">
-          Whether it’s for your household or your business, you can count on
-          quality that shows up the same way every time. From our hearts to your
-          home, we deliver trust in every product.
+        <p className="about-section__text">
+          Our integrated operations allow us to create value beyond
+          manufacturing—supporting households, businesses, distributors, local
+          enterprise, and the communities we serve.
         </p>
 
-        <button className="about__btn">
-          <Link to={"/about"}>
-            Learn More
-            <span>→</span>
+        <button className="about-section__btn">
+          <Link to="/about">
+            Learn More <span>→</span>
           </Link>
         </button>
       </div>
 
-      {/* ───────── RIGHT IMAGE FADE SLIDER ───────── */}
+      {/* RIGHT IMAGE */}
 
-      <div className="about__image-wrapper">
+      <div className="about-section__image-wrapper">
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
             alt="About"
-            className={`about__image ${
+            className={`about-section__image ${
               index === currentImage
-                ? "about__image--active"
-                : "about__image--hidden"
+                ? "about-section__image--active"
+                : "about-section__image--hidden"
             }`}
           />
         ))}
 
-        <div className="about__image-overlay"></div>
+        <div className="about-section__image-overlay"></div>
       </div>
     </section>
   );

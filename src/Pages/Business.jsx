@@ -4,11 +4,11 @@ import PageHero from "../Components/AboutComponents/PageHero";
 
 const businesses = [
   {
-    title: "Soap",
+    title: "Soap Manufacturing",
     categories: "Household",
     description:
-      "Zitelle Soap is a versatile multipurpose soap made for everyday cleaning needs. Strong enough for laundry and practical washing, yet suitable for personal bathing use, it is designed to serve households, businesses, and everyday users who need one dependable soap for different purposes. ",
-    image: "/zitelle/soap1.jpg",
+      "Zitelle Soap is a versatile multipurpose washing soap produced for laundry, household cleaning, and everyday washing needs. Made using oil produced within Zitelle Group, our soap reflects the strength of our integrated manufacturing process and our commitment to quality, consistency, and practical value",
+    image: "/zitelle/soap_bg.jpeg",
     path: "/services/soap",
   },
   {
@@ -23,8 +23,8 @@ const businesses = [
     title: "Packaging",
     categories: "Commercial",
     description:
-      "Zitelle manufactures durable plastic jerrycans from scratch for both our own oil packaging and external commercial supply. By producing our jerrycans in-house, we maintain greater control over quality, consistency, strength and availability. ",
-    image: "/zitelle/plastic1.jpg",
+      "Our plastic jerry cans are manufactured in-house from raw materials to finished containers, giving us greater control over strength, consistency, and quality. ",
+    image: "/zitelle/packaging_bg.jpeg",
     path: "/services/packaging",
   },
   {
@@ -32,8 +32,16 @@ const businesses = [
     categories: "Edible Oil",
     description:
       "Our refined palm Kernel Oil is processed to meet the needs of businesses that require a reliable, versatile, and consistent oil for manufacturing and commercial use. ",
-    image: "/zitelle/oil3.jpg",
+    image: "/zitelle/oil_bg.jpeg",
     path: "/services/cooking-oil",
+  },
+  {
+    title: "Palm Kernel Cake",
+    categories: "Edible Oil",
+    description:
+      "Palm Kernel Cake is a valuable by-product of our palm kernel oil production process. At Zitelle Group, we process and supply PKC for agricultural and commercial use, particularly as a feed ingredient for cattle and livestock.",
+    image: "/zitelle/pk_bg.jpeg",
+    path: "/business",
   },
 ];
 
@@ -70,7 +78,10 @@ const Business = () => {
             consistency and delivery.
           </h2>
           <p className="business-pg__subtext">
-            Select a business unit to explore what we do.
+            We operate across essential sectors that support everyday life,
+            strengthen commercial activity, and contribute to industrial growth.
+            Across our businesses, we are united by a commitment to quality,
+            reliability, and long-term value.
           </p>
         </div>
 

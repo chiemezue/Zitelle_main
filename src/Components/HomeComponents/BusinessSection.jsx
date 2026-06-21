@@ -46,7 +46,7 @@ const BusinessSection = () => {
           <div className="business-pg__label-line" />
         </div>
         <h2 className="business-pg__heading">
-          Four industries. One Standard.
+          Five industries. One Standard.
           <br />
           Built on reliability, quality assurance, and the
           <br />

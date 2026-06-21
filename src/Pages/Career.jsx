@@ -9,11 +9,11 @@ const careerSections = [
 
     label: "Join Our Team",
 
-    title: "Build A Career With Purpose",
+    title: "BUILD YOUR FUTURE WITH ZITELLE",
 
-    text: `At Zitelle Group, we believe our people are central to our success. As an integrated manufacturing group, our work depends on dedicated teams across production, quality control, packaging, logistics, administration, sales, and internal operations.`,
+    text: `At Zitelle, every product begins with its people – the hands that build, the minds that improve, and the teams that keep us moving every day. Behind every process, every product, and every delivery is a shared commitment to quality, discipline, and continuous improvement. `,
 
-    extra: `For over a decade, we have operated with discipline and consistency, producing essential products that serve homes, businesses, and industries. Our people help make this possible everyday. `,
+    extra: ` `,
 
     image: "/zitelle/forklift.jpg",
   },
