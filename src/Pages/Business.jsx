@@ -28,7 +28,7 @@ const businesses = [
     path: "/services/packaging",
   },
   {
-    title: "Refined Edible Oil",
+    title: "Edible Oil Refinery",
     categories: "Edible Oil",
     description:
       "Our refined palm Kernel Oil is processed to meet the needs of businesses that require a reliable, versatile, and consistent oil for manufacturing and commercial use. ",
@@ -41,7 +41,7 @@ const businesses = [
     description:
       "Palm Kernel Cake is a valuable by-product of our palm kernel oil production process. At Zitelle Group, we process and supply PKC for agricultural and commercial use, particularly as a feed ingredient for cattle and livestock.",
     image: "/zitelle/pk_bg.jpeg",
-    path: "/business",
+    // path: "/business",
   },
 ];
 
@@ -105,22 +105,29 @@ const Business = () => {
                   <p>{item.description}</p>
                 </div>
 
-                <div className="business-pg__arrow-wrap">
-                  <div
-                    className="business-pg__arrow-btn"
-                    onClick={() => navigate(item.path)}
-                  >
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                      <path
-                        d="M4 11h14M12 5l6 6-6 6"
-                        stroke="currentColor"
-                        strokeWidth="1.8"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                {item.path && (
+                  <div className="business-pg__arrow-wrap">
+                    <div
+                      className="business-pg__arrow-btn"
+                      onClick={() => navigate(item.path)}
+                    >
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                      >
+                        <path
+                          d="M4 11h14M12 5l6 6-6 6"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           ))}

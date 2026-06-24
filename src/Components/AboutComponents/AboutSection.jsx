@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import TypingText from "../TypingText";
+import HeroStats from "../HeroStats";
+import Counter from "../Counter";
 
 const AboutSection = () => {
   const images = ["/zitelle/who_we_are.jpeg"];
-
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -14,7 +15,6 @@ const AboutSection = () => {
 
     return () => clearInterval(slider);
   }, [images.length]);
-
   return (
     <section className="about-section">
       {/* LEFT CONTENT */}
@@ -45,6 +45,34 @@ const AboutSection = () => {
           enterprise, and the communities we serve.
         </p>
 
+        <div className="about-section__capacity">
+          <div className="about-section__capacity-title">
+            Production Capacity
+          </div>
+
+          <div className="about-section__capacity-row">
+            <span>PKO</span>
+
+            <strong>
+              <Counter end={38325} duration={4000} delay={1200} /> MTPA
+            </strong>
+          </div>
+
+          <div className="about-section__capacity-row">
+            <span>PKC</span>
+
+            <strong>
+              <Counter end={65700} duration={4000} delay={1400} /> MTPA
+            </strong>
+          </div>
+
+          <div className="about-section__capacity-row">
+            <span>SOAP</span>
+
+            <strong>-</strong>
+          </div>
+        </div>
+
         <button className="about-section__btn">
           <Link to="/about">
             Learn More <span>→</span>
@@ -55,20 +83,11 @@ const AboutSection = () => {
       {/* RIGHT IMAGE */}
 
       <div className="about-section__image-wrapper">
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt="About"
-            className={`about-section__image ${
-              index === currentImage
-                ? "about-section__image--active"
-                : "about-section__image--hidden"
-            }`}
-          />
-        ))}
-
-        <div className="about-section__image-overlay"></div>
+        <img
+          src="/zitelle/who_we_are.jpeg"
+          alt="About Zitelle Group"
+          className="about-section__image"
+        />
       </div>
     </section>
   );

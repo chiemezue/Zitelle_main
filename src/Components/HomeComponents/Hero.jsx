@@ -192,13 +192,13 @@ const Hero = () => {
         </div>
       </section>
       {/* CAPACITY CARD */}
-
+      {/* 
       <div className="hero-stats hero-stats--desktop">
         <HeroStats />
       </div>
       <div className="hero-stats hero-stats--mobile">
         <HeroStats />
-      </div>
+      </div> */}
     </>
   );
 };
