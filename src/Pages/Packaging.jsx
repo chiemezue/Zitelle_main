@@ -53,7 +53,7 @@ const Packaging = () => {
             name: "4 Litres ",
             description:
               "Durable food-grade plastic container suitable for oil and liquid products.",
-            image: "/zitelle/4 litres.jpg",
+            image: "/zitelle/4litres.png",
             link: "/contact",
           },
 
@@ -63,7 +63,7 @@ const Packaging = () => {
             name: "9 Litres",
             description:
               "Strong and reliable packaging solution for cooking oil distribution.",
-            image: "/zitelle/10litres.jpg",
+            image: "/zitelle/9litres.png",
             link: "/contact",
           },
 
@@ -83,7 +83,7 @@ const Packaging = () => {
             name: "25 Litre",
             description:
               "Large-capacity packaging designed for bulk storage and transportation.",
-            image: "/zitelle/25litres.png",
+            image: "/zitelle/25litres.jpg",
             link: "/contact",
           },
         ]}
