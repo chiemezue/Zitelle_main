@@ -1,18 +1,65 @@
-import React, { useContext } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { BlogContext } from "../Components/BlogComponents/BlogContext";
+import api from "../services/api";
+import SkeletonLoader from "../Components/BlogComponents/SkeletonLoader";
 
 const BlogSinglePage = () => {
-  const { id } = useParams();
-  const { blog } = useContext(BlogContext);
+  const { slug } = useParams();
 
-  const post = blog.find((p) => p.id === parseInt(id));
-  const related = blog.filter((p) => p.id !== parseInt(id)).slice(0, 3);
+  const [post, setPost] = useState(null);
+  const [related, setRelated] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    const fetchPost = async () => {
+      try {
+        setLoading(true);
+        setError("");
+
+        const { data } = await api.get(`/posts/published/${slug}`);
+
+        setPost(data);
+
+        const posts = await api.get("/posts/published");
+
+        setRelated(posts.data.filter((p) => p.id !== data.id).slice(0, 3));
+      } catch (error) {
+        console.error(error);
+        setError("Unable to load this article.");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPost();
+  }, [slug]);
+
+  if (loading) {
+    return (
+      <div className="single-page">
+        <div className="single-page__container">
+          <SkeletonLoader count={1} />
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="single-not-found">
+        <p>{error}</p>
+
+        <Link to="/blog">← Back to Blog</Link>
+      </div>
+    );
+  }
 
   if (!post) {
     return (
       <div className="single-not-found">
         <p>Post not found.</p>
+
         <Link to="/blog">← Back to Blog</Link>
       </div>
     );
@@ -20,20 +67,15 @@ const BlogSinglePage = () => {
 
   return (
     <div className="single-page">
-      {/* ── Article ── */}
       <div className="single-page__container">
-        {/* Back */}
         <Link to="/blog" className="single-page__back">
           ← Back to Blog
         </Link>
 
-        {/* Category badge */}
         <span className="single-page__badge">{post.category}</span>
 
-        {/* Title */}
         <h1 className="single-page__title">{post.title}</h1>
 
-        {/* Meta */}
         <div className="single-page__meta">
           <span className="single-page__meta-item">
             <svg
@@ -49,8 +91,10 @@ const BlogSinglePage = () => {
               <line x1="8" y1="2" x2="8" y2="6" />
               <line x1="3" y1="10" x2="21" y2="10" />
             </svg>
-            {post.date}
+
+            {new Date(post.publish_date).toLocaleDateString()}
           </span>
+
           <span className="single-page__meta-item">
             <svg
               width="14"
@@ -63,8 +107,10 @@ const BlogSinglePage = () => {
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
               <circle cx="12" cy="7" r="4" />
             </svg>
-            Zitelle Communications
+
+            {post.author}
           </span>
+
           <span className="single-page__meta-item">
             <svg
               width="14"
@@ -77,45 +123,41 @@ const BlogSinglePage = () => {
               <circle cx="12" cy="12" r="10" />
               <polyline points="12 6 12 12 16 14" />
             </svg>
-            {post.readTime}
+
+            {post.read_time}
           </span>
         </div>
 
-        {/* Hero image */}
         <div className="single-page__image-wrap">
           <img
-            src={post.image}
+            src={
+              post.featured_image
+                ? `${import.meta.env.VITE_API_URL.replace(
+                    "/api",
+                    "",
+                  )}/uploads/${post.featured_image}`
+                : "/placeholder.png"
+            }
             alt={post.title}
             className="single-page__image"
           />
         </div>
 
-        {/* Article body */}
         <div className="single-page__body">
           <p className="single-page__lead">{post.excerpt}</p>
 
-          {post.content.map((section, i) => (
-            <div key={i}>
-              <h2 className="single-page__section-heading">
-                {section.heading}
-              </h2>
-              {section.paragraphs.map((para, j) => (
-                <p key={j} className="single-page__paragraph">
-                  {para}
-                </p>
-              ))}
-            </div>
-          ))}
+          <div
+            className="single-page__content"
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
         </div>
 
-        {/* Divider */}
         <hr className="single-page__divider" />
 
-        {/* Share */}
         <div className="single-page__share">
           <p className="single-page__share-label">Share this article</p>
+
           <div className="single-page__share-icons">
-            {/* Facebook */}
             <a
               href="#"
               className="single-page__share-icon"
@@ -130,7 +172,7 @@ const BlogSinglePage = () => {
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
               </svg>
             </a>
-            {/* X / Twitter */}
+
             <a
               href="#"
               className="single-page__share-icon"
@@ -151,7 +193,7 @@ const BlogSinglePage = () => {
                 />
               </svg>
             </a>
-            {/* LinkedIn */}
+
             <a
               href="#"
               className="single-page__share-icon"
@@ -168,7 +210,7 @@ const BlogSinglePage = () => {
                 <circle cx="4" cy="4" r="2" />
               </svg>
             </a>
-            {/* Email */}
+
             <a
               href={`mailto:?subject=${encodeURIComponent(post.title)}`}
               className="single-page__share-icon"
@@ -190,27 +232,38 @@ const BlogSinglePage = () => {
         </div>
       </div>
 
-      {/* ── Related Articles ── */}
       <section className="single-related">
         <div className="single-related__container">
           <h2 className="single-related__heading">Related Articles</h2>
+
           <div className="single-related__grid">
             {related.map((item) => (
               <Link
-                to={`/blog/${item.id}`}
                 key={item.id}
+                to={`/blog/${item.slug}`}
                 className="single-related__card"
               >
                 <div className="single-related__image-wrap">
                   <img
-                    src={item.image}
+                    src={
+                      item.featured_image
+                        ? `${import.meta.env.VITE_API_URL.replace(
+                            "/api",
+                            "",
+                          )}/uploads/${item.featured_image}`
+                        : "/placeholder.png"
+                    }
                     alt={item.title}
                     className="single-related__image"
                   />
                 </div>
+
                 <div className="single-related__body">
                   <h3 className="single-related__title">{item.title}</h3>
-                  <p className="single-related__date">{item.date}</p>
+
+                  <p className="single-related__date">
+                    {new Date(item.publish_date).toLocaleDateString()}
+                  </p>
                 </div>
               </Link>
             ))}

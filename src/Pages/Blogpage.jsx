@@ -32,14 +32,30 @@ const BlogPage = () => {
           <div className="blog-section__grid">
             {loading ? (
               <SkeletonLoader count={6} />
+            ) : blog.length === 0 ? (
+              <div className="blog-empty">
+                <h3>No Articles Yet</h3>
+
+                <p>
+                  We're working on bringing you the latest news and updates.
+                  Please check back soon.
+                </p>
+              </div>
             ) : (
               blog.map((post) => (
-                <Link to={`/blog/${post.id}`} key={post.id}>
+                <Link to={`/blog/${post.slug}`} key={post.id}>
                   <article className="news-card">
                     {/* Image */}
                     <div className="news-card__image-wrap">
                       <img
-                        src={post.image}
+                        src={
+                          post.featured_image
+                            ? `${import.meta.env.VITE_API_URL.replace(
+                                "/api",
+                                "",
+                              )}/uploads/${post.featured_image}`
+                            : "/placeholder.png"
+                        }
                         alt={post.title}
                         className="news-card__image"
                       />

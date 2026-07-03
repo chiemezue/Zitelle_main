@@ -2,9 +2,11 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { BlogContext } from "./BlogContext";
 import SkeletonLoader from "./SkeletonLoader";
+import api from "../../services/api";
 
 const LatestNews = ({ limit }) => {
   const { blog, loading } = useContext(BlogContext);
+
   const visiblePosts = limit ? blog.slice(0, limit) : blog;
 
   return (
@@ -20,16 +22,33 @@ const LatestNews = ({ limit }) => {
         <div className="latest-news__grid">
           {loading ? (
             <SkeletonLoader count={limit || 6} />
+          ) : visiblePosts.length === 0 ? (
+            <div className="blog-empty">
+              <h3>No News Yet</h3>
+
+              <p>
+                There are no published news articles at the moment. Please check
+                back soon for the latest updates from Zitelle.
+              </p>
+            </div>
           ) : (
             visiblePosts.map((post) => (
-              <Link to={`/blog/${post.id}`} key={post.id}>
+              <Link to={`/blog/${post.slug}`} key={post.id}>
                 <article className="news-card">
                   <div className="news-card__image-wrap">
                     <img
-                      src={post.image}
+                      src={
+                        post.featured_image
+                          ? `${import.meta.env.VITE_API_URL.replace(
+                              "/api",
+                              "",
+                            )}/uploads/${post.featured_image}`
+                          : "/placeholder.png"
+                      }
                       alt={post.title}
                       className="news-card__image"
                     />
+
                     <div className="news-card__overlay" />
                   </div>
 
@@ -38,8 +57,16 @@ const LatestNews = ({ limit }) => {
                       <span className="news-card__category">
                         {post.category}
                       </span>
+
                       <span className="news-card__dot">•</span>
-                      <span className="news-card__date">{post.date}</span>
+
+                      <span className="news-card__date">
+                        {new Date(post.publish_date).toLocaleDateString()}
+                      </span>
+
+                      <span className="news-card__dot">•</span>
+
+                      <span className="news-card__date">{post.read_time}</span>
                     </div>
 
                     <h3 className="news-card__title">{post.title}</h3>
@@ -70,7 +97,7 @@ const LatestNews = ({ limit }) => {
           )}
         </div>
 
-        {/* CTA — only when limit is set (homepage) */}
+        {/* CTA */}
         {limit && !loading && (
           <div className="latest-news__footer">
             <Link to="/blog" className="latest-news__button">
