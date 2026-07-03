@@ -54,7 +54,7 @@ const AboutSection = () => {
             <span>PKO</span>
 
             <strong>
-              <Counter end={38325} duration={4000} delay={1200} /> MTPA
+              <Counter end={38325} duration={6000} delay={1200} /> MTPA
             </strong>
           </div>
 
@@ -69,7 +69,9 @@ const AboutSection = () => {
           <div className="about-section__capacity-row">
             <span>SOAP</span>
 
-            <strong>-</strong>
+            <strong>
+              <Counter end={1000000} duration={4000} delay={1400} /> Cartons
+            </strong>
           </div>
         </div>
 

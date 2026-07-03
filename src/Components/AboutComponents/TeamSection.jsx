@@ -4,8 +4,8 @@ const teamMembers = [
   {
     name: "Dominic Okechukwu-Anolue",
     role: "Chairman",
-    description:
-      "Provides strategic direction and leadership, guiding the long-term vision and growth of Zitelle Group.",
+    // description:
+    //   "Provides strategic direction and leadership, guiding the long-term vision and growth of Zitelle Group.",
     image:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop",
   },
@@ -13,84 +13,85 @@ const teamMembers = [
   {
     name: "Chimfurumnanya Frances Okechukwu-Anolue",
     role: "Managing Director",
-    description:
-      "Leads the overall operations of the Group, ensuring excellence, innovation, and sustainable business growth.",
-    image: "/zitelle/Chimfurumnanya.jpg",
+    // description:
+    //   "Leads the overall operations of the Group, ensuring excellence, innovation, and sustainable business growth.",
+    image: "/zitelle/Frances Okechukwu-Anolue.jpeg",
   },
-
-  {
-    name: "Stella Akunyiba",
-    role: "General Manager (Awka)",
-    description:
-      "Oversees business operations and strategic execution across the Awka division.",
-    image: "/zitelle/Stella Akunyiba.jpg",
-  },
-
-  {
-    name: "Ngozi Oluchime",
-    role: "General Manager (Lagos)",
-    description:
-      "Drives operational performance and business development activities within the Lagos division.",
-    image:
-      "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=1200&auto=format&fit=crop",
-  },
-
-  {
-    name: "Sonia Enumah",
-    role: "Group Executive Secretary",
-    description:
-      "Coordinates executive administration, corporate communications, and organizational governance support.",
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop",
-  },
-
   {
     name: "James Monweya",
-    role: "Chief Financial Controller (Lagos)",
-    description:
-      "Leads financial planning, reporting, compliance, and fiscal strategy for the Group.",
+    role: "Chief Financial Controller",
+    // description:
+    //   "Leads financial planning, reporting, compliance, and fiscal strategy for the Group.",
     image:
       "https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=1200&auto=format&fit=crop",
   },
+  {
+    name: "Stella Akunyiba AWKA",
+    role: "General Manager",
+    // description:
+    //   "Oversees business operations and strategic execution across the Awka division.",
+    image: "/zitelle/Stella Akunyiba.jpEg",
+  },
 
   {
+    name: "Ngozi Oluchime LAGOS",
+    role: "General Manager",
+    // description:
+    //   "Drives operational performance and business development activities within the Lagos division.",
+    image:
+      "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
     name: "Emmanuel Edobor",
-    role: "Financial Controller (Awka)",
-    description:
-      "Manages budgeting, financial reporting, and internal financial controls for the Awka operations.",
-    image: "/zitelle/Emmanuel Edobor.jpg",
+    role: "Financial Controller LAGOS",
+    // description:
+    //   "Manages budgeting, financial reporting, and internal financial controls for the Awka operations.",
+    image: "/zitelle/Emmanuel Edobor.jpeg",
   },
 
   {
     name: "Nonso Oyeoka",
     role: "Head of Audit & Internal Control",
-    description:
-      "Ensures accountability, risk management, compliance, and strong internal control systems.",
-    image: "/zitelle/Nonso Oyeoka.jpg",
+    // description:
+    //   "Ensures accountability, risk management, compliance, and strong internal control systems.",
+    image: "/zitelle/Nonso Oyeoka.jpeg",
   },
 
   {
-    name: "Romanus Idiemerio",
-    role: "Accountant",
-    description:
-      "Supports financial operations through accurate accounting, reporting, and regulatory compliance.",
-    image: "/zitelle/Romanus Idiemerio.jpg",
+    name: "Sonia Enumah",
+    role: "Head of Administration",
+    // description:
+    //   "Coordinates executive administration, corporate communications, and organizational governance support.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop",
   },
-
   {
     name: "Kenneth Anuforo",
     role: "Head of Human Resource",
-    description:
-      "Leads talent acquisition, employee development, workplace culture, and people management initiatives.",
-    image: "/zitelle/Kenneth Anuforo.jpg",
+    // description:
+    //   "Leads talent acquisition, employee development, workplace culture, and people management initiatives.",
+    image: "/zitelle/Kenneth Anuforo.jpeg",
   },
-
   {
     name: "Uche Onuorah",
-    role: "Head of Sales & Marketing",
-    description:
-      "Drives market expansion, customer engagement, revenue growth, and brand development across the Group.",
+    role: "Head of Sales & Marketing AWKA",
+    // description:
+    //   "Drives market expansion, customer engagement, revenue growth, and brand development across the Group.",
     image: "/zitelle/Uche Onuorah.jpg",
+  },
+  {
+    name: "Ebuka Dontaus Obinwa",
+    role: "Head of Sales & Marketing LAGOS",
+    // description:
+    //   "Drives market expansion, customer engagement, revenue growth, and brand development across the Group.",
+    // image: "/zitelle/Uche Onuorah.jpg",
+  },
+  {
+    name: "Romanus Idiemerio",
+    role: "Accountant",
+    // description:
+    //   "Supports financial operations through accurate accounting, reporting, and regulatory compliance.",
+    image: "/zitelle/Romanus Idiemerio.jpg",
   },
 ];
 
@@ -125,9 +126,9 @@ const TeamSection = () => {
                 {/* GOLD PROFILE CARD */}
 
                 <div className="team__profile">
-                  <h3>{member.name}</h3>
+                  <h3>{member.role}</h3>
 
-                  <p>{member.role}</p>
+                  <p>{member.name}</p>
                 </div>
               </div>
 

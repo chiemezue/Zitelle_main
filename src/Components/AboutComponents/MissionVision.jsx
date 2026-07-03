@@ -75,8 +75,8 @@ const visionMission = [
         />
       </svg>
     ),
-    label: "Vision Statement",
-    text: "To be number one in every market we serve and for every branded product we offer.",
+    label: "Vision",
+    text: "To become a trusted leader in African manufacturing, creating essential products that support everyday life, strengthen local industries, and deliver lasting value to the markets we serve.",
   },
   {
     icon: (
@@ -136,8 +136,8 @@ const visionMission = [
         />
       </svg>
     ),
-    label: "Mission Statement",
-    text: "To make financial services easy and accessible to our customers.",
+    label: "Mission",
+    text: "To manufacture quality products that serve households, businesses, and industries, while supporting local enterprise, empowering communities, creating opportunities, and contributing to sustainable development through disciplined production and responsible operations.",
   },
   {
     icon: (
@@ -220,10 +220,11 @@ const visionMission = [
     label: "Core Values",
     values: [
       "C - Customer First",
-      "R - Respect",
-      "E - Excellence",
-      "S- Shared Ambition",
+      "R - Responsibility",
+      "I - Innovation",
       "T - Tenacity",
+      "C - Community Empowerment",
+      "S - Sustainability",
     ],
   },
 ];

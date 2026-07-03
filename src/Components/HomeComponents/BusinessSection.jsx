@@ -5,19 +5,18 @@ import { Link } from "react-router-dom";
 const BusinessSection = () => {
   const businesses = [
     {
+      title: "Edible Oil Refinery",
+      description:
+        "Our refined palm Kernel Oil is processed to meet the needs of businesses that require a reliable, versatile, and consistent oil for manufacturing and commercial use.",
+      image: "/zitelle/oil_bg.jpeg",
+      link: "/services/cooking-oil",
+    },
+    {
       title: "Soap Manufacturing",
       description:
         "Zitelle Soap is a versatile multipurpose washing soap produced for laundry, household cleaning, and everyday washing needs. Made using oil produced within Zitelle Group, our soap reflects the strength of our integrated manufacturing process and our commitment to quality, consistency, and practical value.",
       image: "/zitelle/soap_bg.jpeg",
       link: "/services/soap",
-    },
-
-    {
-      title: "Plywood",
-      description:
-        "Our plywood is responsibly sourced and imported from China. We work with consistent specifications and clear order handling to support customers who need dependable availability and predictable supply.  ",
-      image: "/zitelle/plywood5.jpg",
-      link: "/services/plywood",
     },
 
     {
@@ -29,12 +28,13 @@ const BusinessSection = () => {
     },
 
     {
-      title: "Edible Oil Refinery",
+      title: "Plywood",
       description:
-        "Our refined palm Kernel Oil is processed to meet the needs of businesses that require a reliable, versatile, and consistent oil for manufacturing and commercial use.",
-      image: "/zitelle/oil_bg.jpeg",
-      link: "/services/cooking-oil",
+        "Our plywood is responsibly sourced and imported from China. We work with consistent specifications and clear order handling to support customers who need dependable availability and predictable supply.  ",
+      image: "/zitelle/plywood5.jpg",
+      link: "/services/plywood",
     },
+
     {
       title: " Palm Kernel Cake",
       description:
@@ -59,12 +59,12 @@ const BusinessSection = () => {
           <br />
           capacity to deliver at scale.
         </h2>
-        <p className="business-pg__subtext">
+        {/* <p className="business-pg__subtext">
           We operate across essential sectors that support everyday life,
           strengthen commercial activity, and contribute to industrial growth.
           Across our businesses, we are united by a commitment to quality,
           reliability, and long-term value.
-        </p>
+        </p> */}
       </div>
       {/* <div className="business-section__top">
         <div className="business-section__heading">

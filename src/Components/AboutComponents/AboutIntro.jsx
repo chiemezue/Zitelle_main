@@ -47,7 +47,7 @@ const AboutIntro = ({ sections }) => {
             {/* LABEL */}
             <div className="section-label">
               <span>{section.label}</span>
-              <div className="section-line" />
+              {/* <div className="section-line" /> */}
             </div>
 
             {/* TITLE */}

@@ -5,8 +5,8 @@ const AboutCommit = () => {
   return (
     <>
       <DarkReusableSection
-        label="Our Commitment"
-        title="Our Commitment to Excellence"
+        // label="Our Commitment"
+        title="Our Commitment"
         text="Zitelle Group is committed to:"
         // buttonLink="/careers"
         // buttonText="Careers"

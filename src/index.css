@@ -2217,7 +2217,7 @@ lg:grid-cols-[1fr_1fr]
 .team__profile h3 {
   font-family: var(--font-heading);
 
-  @apply text-[24px]
+  @apply text-[1.2rem]
   font-extrabold
   uppercase
   mb-2
@@ -2233,11 +2233,10 @@ lg:grid-cols-[1fr_1fr]
 }
 
 /* BODY */
-
 .team__body {
   @apply px-8
-  pt-24
-  pb-10
+  pt-16
+  pb-6
   text-center;
 }
 

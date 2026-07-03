@@ -9,9 +9,9 @@ const aboutSections = [
   {
     id: 1,
 
-    label: "Who We Are",
+    // label: "Who We Are",
 
-    title: "Built Around Everyday Essentials",
+    title: "Who We Are",
 
     text: `Zitelle Group is an integrated Nigerian manufacturing group committed to producing essential products for homes, businesses and industries. With operations spanning edible oils, multipurpose soap, plastic packaging, and wood products, we bring together different sectors under one shared standard of quality, reliability and service. 
         
@@ -26,9 +26,9 @@ const aboutSections = [
   {
     id: 2,
 
-    label: "Our Standard",
+    // label: "Our Standard",
 
-    title: "Built on Discipline, Consistency, and Improvement",
+    title: "Our Standard",
 
     text: `At Zitelle, consistency is part of our identity. Operating seven days a week for over a decade has taught us that quality is not achieved by chance. It is built through routine, monitoring, training, process improvement, and commitment.
           Across our divisions, we continue to refine how we work – from raw material handling and production to packaging, quality control, logistics, and customer service.
@@ -37,7 +37,7 @@ const aboutSections = [
 
     extra: `We believe that every product carrying the Zitelle name should reflect care, reliability and usefulness. Whether a customer is buying oil for household use, soap for daily washing, jerrycans for commercial packaging, or wood products for business needs, they should feel confident in the standard behind the product. `,
 
-    image: "/zitelle/aboutpage2.jpg",
+    image: "/zitelle/our_standard.jpeg",
   },
 ];
 
@@ -47,12 +47,12 @@ const About = () => {
       <PageHero
         title="About"
         highlight=""
-        image="/zitelle/signboard.jpg"
+        image="/zitelle/about_hero.jpeg"
         breadcrumb={
           <>
-            <span className="page-hero__crumb">Home /</span>
+            {/* <span className="page-hero__crumb">Home /</span>
 
-            <span className="page-hero__crumb--active">About</span>
+            <span className="page-hero__crumb--active">About</span> */}
           </>
         }
       />

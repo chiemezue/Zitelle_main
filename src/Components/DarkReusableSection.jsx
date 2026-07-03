@@ -32,7 +32,7 @@ const DarkReusableSection = ({
           <div className="career__label">
             <span>{label}</span>
 
-            <div className="career__line"></div>
+            {/* <div className="career__line"></div> */}
           </div>
 
           <TypingText text={title} speed={75} className="career__title" />
