@@ -15,7 +15,7 @@ const careerSections = [
 
     extra: ` `,
 
-    image: "/zitelle/forklift.jpg",
+    image: "/zitelle/career.jpeg",
   },
 ];
 

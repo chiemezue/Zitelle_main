@@ -100,7 +100,11 @@ const BusinessSection = () => {
               <div className="business__overlay-content">
                 <h3>{item.title}</h3>
                 <div className="business__divider" />
-                <p>{item.description}</p>
+                <div className="business__desc">
+                  <div>
+                    <p>{item.description}</p>
+                  </div>
+                </div>
               </div>
               {item.link ? (
                 <Link to={item.link} className="business__read-more">

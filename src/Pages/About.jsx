@@ -20,7 +20,7 @@ const aboutSections = [
 
     extra: `From the oil used in homes and businesses, to the soap used for bathing, laundry and cleaning, to the jerrycans that package and protect liquid products, and the wood products that support construction, furniture, and commercial use – Zitelle Group serves practical needs across multiple parts of the market. `,
 
-    image: "/zitelle/aboutpage1.jpg",
+    image: "/zitelle/about_hero.jpeg",
   },
 
   {

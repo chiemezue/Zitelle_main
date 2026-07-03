@@ -1108,9 +1108,7 @@ lg:grid-cols-[1fr_1fr]
   }
 
   .business__overlay-content {
-    @apply px-7
-  pt-6
-  pb-2;
+    @apply px-7 pt-6 pb-2;
   }
 
   .business__overlay-content h3 {
@@ -1132,6 +1130,23 @@ lg:grid-cols-[1fr_1fr]
     transition: width 0.4s ease 0.1s;
   }
 
+  .business__card:hover .business__divider {
+    width: 70px;
+  }
+
+  /* DESCRIPTION — collapsed by default, grows upward on hover */
+
+  .business__desc {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease;
+  }
+
+  .business__desc > div {
+    overflow: hidden;
+    min-height: 0;
+  }
+
   .business__overlay-content p {
     font-family: var(--font-body);
 
@@ -1146,6 +1161,30 @@ lg:grid-cols-[1fr_1fr]
       transform 0.35s ease 0.1s;
   }
 
+  .business__card:hover .business__desc {
+    grid-template-rows: 1fr;
+  }
+
+  .business__card:hover .business__overlay-content p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 640px) {
+    .business__desc {
+      grid-template-rows: 1fr; /* always "open" on mobile, no hover needed */
+    }
+
+    .business__overlay-content p {
+      opacity: 1;
+      transform: translateY(0);
+
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
   /* ───────── READ MORE BAR ───────── */
 
   /* ───────── READ MORE BAR ───────── */
