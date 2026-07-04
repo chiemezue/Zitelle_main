@@ -26,16 +26,16 @@ const teamMembers = [
       "https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    name: "Stella Akunyiba AWKA",
-    role: "General Manager",
+    name: "Stella Akunyiba ",
+    role: "General Manager AWKA",
     // description:
     //   "Oversees business operations and strategic execution across the Awka division.",
-    image: "/zitelle/Stella Akunyiba.jpEg",
+    image: "/zitelle/Stella Akunyiba.jpeg",
   },
 
   {
-    name: "Ngozi Oluchime LAGOS",
-    role: "General Manager",
+    name: "Ngozi Oluchime ",
+    role: "General Manager LAGOS",
     // description:
     //   "Drives operational performance and business development activities within the Lagos division.",
     image:

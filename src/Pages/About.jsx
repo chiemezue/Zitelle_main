@@ -13,9 +13,15 @@ const aboutSections = [
 
     title: "Who We Are",
 
-    text: `Zitelle Group is an integrated Nigerian manufacturing group committed to producing essential products for homes, businesses and industries. With operations spanning edible oils, multipurpose soap, plastic packaging, and wood products, we bring together different sectors under one shared standard of quality, reliability and service. 
-        
-        For over a decade, we have operated with discipline and consistency, working seven days a week to improve our processes, strengthen our products, and deliver dependable value to our customers. Our journey has been shaped by resilience, continuous improvement, and clear understanding of the role manufacturing plays in everyday life. 
+    text: `Zitelle Group is a diversified Nigerian manufacturing group dedicated to producing essential products that support homes, businesses, and industries. With operations spanning edible oils, multipurpose soap, plastic packaging, and wood products, we have built an integrated ecosystem of manufacturing businesses united by a common commitment to quality, reliability, and innovation.
+
+For over a decade, we have remained steadfast in our pursuit of operational excellence—working with discipline, consistency, and a continuous drive to improve our processes and products. Our journey has been shaped by resilience, adaptability, and a deep understanding of the vital role manufacturing plays in everyday life and economic growth.
+
+At Zitelle Group, we create products that meet practical needs across diverse markets: from edible oils used in homes, food production, and commercial kitchens; to soaps for bathing, laundry, and industrial cleaning; to durable plastic packaging solutions that preserve and transport liquid products; and wood products that serve construction, furniture, and commercial applications.
+
+Beyond manufacturing, we are committed to building trust through dependable service, creating value for our customers, and contributing to Nigeria’s industrial development. Every product we make reflects our belief in consistency, functionality, and long-term impact.
+
+At the heart of Zitelle Group is a simple mission: to manufacture essential products that improve daily living while driving sustainable growth for the communities and industries we serve. 
 `,
 
     extra: `From the oil used in homes and businesses, to the soap used for bathing, laundry and cleaning, to the jerrycans that package and protect liquid products, and the wood products that support construction, furniture, and commercial use – Zitelle Group serves practical needs across multiple parts of the market. `,
