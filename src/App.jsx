@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WhyUs from "./Pages/WhyUs";
 import MainLayout from "./Layout/MainLayout";
@@ -14,29 +13,55 @@ import Soap from "./Pages/Soap";
 import CookingOil from "./Pages/CookingOil";
 import Packaging from "./Pages/Packaging";
 import Business from "./Pages/Business";
+import BlogPage from "./Pages/BlogPage";
+import BlogSinglePage from "./Pages/BlogSinglePage";
+import { BlogContext } from "./Components/BlogComponents/BlogContext";
+import api from "./services/api";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
+  const [blog, setBlog] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const { data } = await api.get("/posts/published");
+
+        setBlog(data);
+      } catch (error) {
+        console.error("Failed to load posts:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPosts();
+  }, []);
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<Home />} />
-
-          <Route path="/about" element={<About />} />
-          <Route path="/why_us" element={<WhyUs />} />
-          <Route path="/business" element={<Business />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/career/apply" element={<CareerForm />} />
-          <Route path="/contact" element={<Contact />} />
-
-          <Route path="/services/plywood" element={<Plywood />} />
-          <Route path="/services/soap" element={<Soap />} />
-          <Route path="/services/cooking-oil" element={<CookingOil />} />
-          <Route path="/services/packaging" element={<Packaging />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <BlogContext.Provider value={{ blog, setBlog, loading }}>
+      <Toaster position="top-right" />
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route element={<MainLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/why_us" element={<WhyUs />} />
+            <Route path="/business" element={<Business />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/career/apply" element={<CareerForm />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogSinglePage />} />
+            <Route path="/services/plywood" element={<Plywood />} />
+            <Route path="/services/soap" element={<Soap />} />
+            <Route path="/services/cooking-oil" element={<CookingOil />} />
+            <Route path="/services/packaging" element={<Packaging />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </BlogContext.Provider>
   );
 };
 

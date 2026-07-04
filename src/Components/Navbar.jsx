@@ -15,6 +15,7 @@ const navLinks = [
   { label: "Our Businesses", path: "/business" },
   { label: "Why Us", path: "/why_us" },
   { label: "Careers", path: "/careers" },
+  { label: "News", path: "/blog" },
   { label: "Contact", path: "/contact" },
 ];
 
@@ -157,6 +158,17 @@ const Navbar = () => {
               }
             >
               Careers
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/blog"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              News
             </NavLink>
           </li>
 

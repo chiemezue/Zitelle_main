@@ -1,8 +1,109 @@
+import { useEffect, useState } from "react";
+import api from "../../../../admin/src/services/api";
+import toast from "react-hot-toast";
+
 const CareerApply = () => {
+  const [loading, setLoading] = useState(false);
+  const [jobs, setJobs] = useState([]);
+
+  const [form, setForm] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    location: "",
+    address: "",
+    jobTitle: "",
+    experience: "",
+    cv: null,
+  });
+
+  // ================= FETCH ACTIVE JOBS =================
+  useEffect(() => {
+    const fetchJobs = async () => {
+      try {
+        const res = await api.get("/jobs/active");
+        setJobs(res.data);
+      } catch (err) {
+        console.log(err);
+        toast.error("Failed to load jobs");
+      }
+    };
+
+    fetchJobs();
+  }, []);
+
+  // ================= HANDLE INPUT =================
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  // ================= HANDLE FILE =================
+  const handleFile = (e) => {
+    setForm({
+      ...form,
+      cv: e.target.files[0],
+    });
+  };
+
+  // ================= SUBMIT =================
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!form.fullName || !form.email || !form.jobTitle) {
+      return toast.error("Please fill required fields");
+    }
+
+    if (!form.cv) {
+      return toast.error("Please upload your CV");
+    }
+
+    try {
+      setLoading(true);
+
+      const formData = new FormData();
+
+      formData.append("fullName", form.fullName);
+      formData.append("email", form.email);
+      formData.append("phone", form.phone);
+      formData.append("location", form.location);
+      formData.append("address", form.address);
+      formData.append("jobTitle", form.jobTitle);
+      formData.append("experience", form.experience);
+      formData.append("cv", form.cv);
+
+      await api.post("/applications", formData);
+
+      toast.success("Application submitted successfully");
+
+      // RESET FORM
+      setForm({
+        fullName: "",
+        email: "",
+        phone: "",
+        location: "",
+        address: "",
+        jobTitle: "",
+        experience: "",
+        cv: null,
+      });
+
+      e.target.reset();
+    } catch (err) {
+      console.log(err);
+      toast.error(
+        err?.response?.data?.message || "Failed to submit application",
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className="career-apply">
       {/* TOP */}
-
       <div className="career-apply__top">
         <h2 className="career-apply__title">Apply Now</h2>
 
@@ -14,38 +115,55 @@ const CareerApply = () => {
       </div>
 
       {/* FORM */}
-
-      <form className="career-apply__form">
+      <form className="career-apply__form" onSubmit={handleSubmit}>
         {/* ROW */}
-
         <div className="career-apply__grid">
           <div className="career-apply__field">
-            <label>Full Name</label>
-
-            <input type="text" placeholder="Your Name.." />
+            <label>Full Name *</label>
+            <input
+              type="text"
+              name="fullName"
+              value={form.fullName}
+              onChange={handleChange}
+              placeholder="Your Name.."
+              required
+            />
           </div>
 
           <div className="career-apply__field">
-            <label>Email</label>
-
-            <input type="email" placeholder="Your Email..." />
+            <label>Email *</label>
+            <input
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              placeholder="Your Email..."
+              required
+            />
           </div>
         </div>
 
         {/* ROW */}
-
         <div className="career-apply__grid">
           <div className="career-apply__field">
             <label>Phone Number</label>
-
-            <input type="text" placeholder="+234 ---------" />
+            <input
+              type="text"
+              name="phone"
+              value={form.phone}
+              onChange={handleChange}
+              placeholder="+234 ---------"
+            />
           </div>
 
           <div className="career-apply__field">
             <label>Location</label>
-
-            <select>
-              <option>Select...</option>
+            <select
+              name="location"
+              value={form.location}
+              onChange={handleChange}
+            >
+              <option value="">Select...</option>
               <option>Lagos</option>
               <option>Abuja</option>
               <option>Port Harcourt</option>
@@ -55,33 +173,49 @@ const CareerApply = () => {
         </div>
 
         {/* ADDRESS */}
-
         <div className="career-apply__field">
           <label>Address</label>
-
-          <textarea placeholder="Address, City, Zip Code" />
+          <textarea
+            name="address"
+            value={form.address}
+            onChange={handleChange}
+            placeholder="Address, City, Zip Code"
+          />
         </div>
 
-        {/* ROW */}
-
+        {/* APPLYING FOR (DYNAMIC) */}
         <div className="career-apply__grid">
           <div className="career-apply__field">
-            <label>Applying For</label>
+            <label>Applying For *</label>
 
-            <select>
-              <option>Select...</option>
-              <option>Sales</option>
-              <option>Quality Control</option>
-              <option>Packaging</option>
-              <option>Logistics</option>
+            <select
+              name="jobTitle"
+              value={form.jobTitle}
+              onChange={handleChange}
+              required
+            >
+              <option value="">Select a Job...</option>
+
+              {jobs.length === 0 ? (
+                <option disabled>No jobs available</option>
+              ) : (
+                jobs.map((job) => (
+                  <option key={job.id} value={job.title}>
+                    {job.title} {job.location ? `(${job.location})` : ""}
+                  </option>
+                ))
+              )}
             </select>
           </div>
 
           <div className="career-apply__field">
             <label>Years Of Experience</label>
-
-            <select>
-              <option>Select...</option>
+            <select
+              name="experience"
+              value={form.experience}
+              onChange={handleChange}
+            >
+              <option value="">Select...</option>
               <option>0 - 1 Year</option>
               <option>2 - 4 Years</option>
               <option>5+ Years</option>
@@ -90,17 +224,19 @@ const CareerApply = () => {
         </div>
 
         {/* FILE */}
-
         <div className="career-apply__field">
-          <label>Upload CV</label>
-
-          <input type="file" className="career-apply__file" />
+          <label>Upload CV *</label>
+          <input
+            type="file"
+            accept=".pdf,.doc,.docx"
+            onChange={handleFile}
+            required
+          />
         </div>
 
         {/* BUTTON */}
-
-        <button type="submit" className="career-apply__btn">
-          Submit Application
+        <button type="submit" className="career-apply__btn" disabled={loading}>
+          {loading ? "Submitting..." : "Submit Application"}
         </button>
       </form>
     </section>
