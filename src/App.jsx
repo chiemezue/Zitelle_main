@@ -13,7 +13,7 @@ import Soap from "./Pages/Soap";
 import CookingOil from "./Pages/CookingOil";
 import Packaging from "./Pages/Packaging";
 import Business from "./Pages/Business";
-import BlogPage from "./Pages/BlogPage";
+import BlogPage from "./Pages/Blogpage";
 import BlogSinglePage from "./Pages/BlogSinglePage";
 import { BlogContext } from "./Components/BlogComponents/BlogContext";
 import api from "./services/api";
