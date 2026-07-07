@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import api from "../../../../admin/src/services/api";
+import api from "../../services/api";
 import toast from "react-hot-toast";
 
 const CareerApply = () => {
