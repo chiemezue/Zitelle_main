@@ -26,17 +26,14 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
 
-  /* ───────── HIDE ON SCROLL ───────── */
-  /* ───────── HIDE ON SCROLL ───────── */
+  /* ── HIDE ON SCROLL ── */
   useEffect(() => {
-    const handleScroll = () => {
-      setHidden(window.scrollY > 1);
-    };
+    const handleScroll = () => setHidden(window.scrollY > 1);
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  /* ───────── CLOSE DROPDOWN ON OUTSIDE CLICK ───────── */
+  /* ── CLOSE DROPDOWN ON OUTSIDE CLICK ── */
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
@@ -47,9 +44,17 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  /* ── LOCK BODY SCROLL WHEN MENU OPEN ── */
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
+
   return (
     <>
-      {/* ───────────────── DESKTOP NAVBAR ───────────────── */}
+      {/* ── DESKTOP NAVBAR ── */}
       <nav className={`navbar ${hidden ? "navbar--hidden" : ""}`}>
         {/* LOGO */}
         <Link to="/">
@@ -80,7 +85,7 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-          {/* DROPDOWN — click to toggle */}
+          {/* DROPDOWN */}
           <li
             className="navbar__dropdown"
             ref={dropdownRef}
@@ -108,9 +113,7 @@ const Navbar = () => {
                   height="14"
                   viewBox="0 0 14 14"
                   fill="none"
-                  className={`navbar__dropdown-chevron ${
-                    dropdownOpen ? "rotate-180" : ""
-                  }`}
+                  className={`navbar__dropdown-chevron ${dropdownOpen ? "rotate-180" : ""}`}
                 >
                   <path
                     d="M3 5l4 4 4-4"
@@ -124,9 +127,7 @@ const Navbar = () => {
             </div>
 
             <ul
-              className={`navbar__dropdown-menu ${
-                dropdownOpen ? "navbar__dropdown-menu--open" : ""
-              }`}
+              className={`navbar__dropdown-menu ${dropdownOpen ? "navbar__dropdown-menu--open" : ""}`}
             >
               {services.map((service) => (
                 <li key={service.num}>
@@ -140,6 +141,7 @@ const Navbar = () => {
               ))}
             </ul>
           </li>
+
           <li>
             <NavLink
               to="/why_us"
@@ -202,8 +204,9 @@ const Navbar = () => {
         </button>
       </nav>
 
-      {/* ───────────────── MOBILE MENU ───────────────── */}
+      {/* ── MOBILE MENU ── */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+        {/* HEAD — fixed, never scrolls */}
         <div className="mobile-menu__head">
           <Link to="/" onClick={() => setMenuOpen(false)}>
             <img src={logo} alt="Zitelle Group" className="navbar__logo" />
@@ -217,27 +220,38 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* <p className="mobile-menu__services-label">Our Business</p> */}
+        {/* BODY — scrollable */}
+        <div className="mobile-menu__body">
+          {/* Our Businesses */}
+          <p className="mobile-menu__services-label">Our Businesses</p>
+          <ul className="mobile-menu__services">
+            {services.map((service) => (
+              <li key={service.num}>
+                <Link to={service.path} onClick={() => setMenuOpen(false)}>
+                  {service.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
 
-        <ul className="mobile-menu__services">
-          {services.map((service) => (
-            <li key={service.num}>
-              <Link to={service.path} onClick={() => setMenuOpen(false)}>
-                {service.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+          {/* Main nav links */}
+          <ul className="mobile-menu__links">
+            {navLinks.map((link) => (
+              <li key={link.label}>
+                <NavLink to={link.path} onClick={() => setMenuOpen(false)}>
+                  {link.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-        <ul className="mobile-menu__links">
-          {navLinks.map((link) => (
-            <li key={link.label}>
-              <NavLink to={link.path} onClick={() => setMenuOpen(false)}>
-                {link.label}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
+        {/* CTA — fixed at bottom */}
+        <div className="mobile-menu__cta">
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>
+            Get In Touch
+          </Link>
+        </div>
       </div>
     </>
   );
