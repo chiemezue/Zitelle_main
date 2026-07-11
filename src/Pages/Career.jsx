@@ -44,7 +44,7 @@ const Career = () => {
         title="Interested In Joining Our Team?"
         text="We are always looking for talented, hardworking, and motivated people who want to grow with us. "
         extra="Explore our available roles and discover where your skills, experience, and ambition could fit within Zitelle Group."
-        image="/zitelle/career1.jpg"
+        image="/zitelle/join_our_team.jpeg"
         buttonText="View Roles"
         buttonLink="/career/apply"
       />

@@ -27,7 +27,7 @@ const features = [
     title: "Commitment to Local Manufacturing",
     text: "Zitelle Group is proud to contribute to Nigerian manufacturing. By producing essential goods locally, we support enterprise, strengthen the supply chain and contribute to the growth of industries that serve everyday life. ",
 
-    image: "/zitelle/machine2.jpg",
+    image: "/zitelle/commitment_why.jpeg",
   },
 ];
 

@@ -53,7 +53,7 @@ const Business = () => {
       <PageHero
         title="Our Businesses"
         highlight=""
-        image="/zitelle/new 3.png"
+        image="/zitelle/business_hero.jpeg"
         // breadcrumb={
         //   <>
         //     <span className="page-hero__crumb">Home /</span>

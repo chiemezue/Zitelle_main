@@ -11,7 +11,7 @@ const PalmKernel = () => {
       <PageHero
         title="Palm Kernel Cake"
         highlight=""
-        image="/zitelle/IMG_0124.png"
+        image="/zitelle/pk_bg.jpeg"
       />
       <ProductHero
         label="About"
