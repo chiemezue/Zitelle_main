@@ -6,11 +6,11 @@ const ProductGrid = ({ label, title, products }) => {
       {/* HEADER */}
 
       <div className="product-grid__header">
-        <div className="product-grid__label">
+        {/* <div className="product-grid__label">
           <span>{label}</span>
 
           <div className="product-grid__line"></div>
-        </div>
+        </div> */}
 
         <h2 className="product-grid__title">{title}</h2>
       </div>

@@ -4,20 +4,20 @@ import PageHero from "../Components/AboutComponents/PageHero";
 
 const businesses = [
   {
+    title: "Edible Oil Refinery",
+    categories: "Edible Oil",
+    description:
+      "Our refined palm Kernel Oil is processed to meet the needs of businesses that require a reliable, versatile, and consistent oil for manufacturing and commercial use. ",
+    image: "/zitelle/oil_bg.jpeg",
+    path: "/services/cooking-oil",
+  },
+  {
     title: "Soap Manufacturing",
     categories: "Household",
     description:
       "Zitelle Soap is a versatile multipurpose washing soap produced for laundry, household cleaning, and everyday washing needs. Made using oil produced within Zitelle Group, our soap reflects the strength of our integrated manufacturing process and our commitment to quality, consistency, and practical value",
     image: "/zitelle/soap_bg.jpeg",
     path: "/services/soap",
-  },
-  {
-    title: "Plywood",
-    categories: "Construction",
-    description:
-      "TATA & BOBO is Zitelle Group’s plywood business, supplying  a wide range of plywood and board products for furniture making, interior finishing, and construction – focused on providing customers quality, dependable stock, smooth order execution and competitive pricing.",
-    image: "/zitelle/plywood5.jpg",
-    path: "/services/plywood",
   },
   {
     title: "Packaging",
@@ -28,12 +28,12 @@ const businesses = [
     path: "/services/packaging",
   },
   {
-    title: "Edible Oil Refinery",
-    categories: "Edible Oil",
+    title: "Plywood",
+    categories: "Construction",
     description:
-      "Our refined palm Kernel Oil is processed to meet the needs of businesses that require a reliable, versatile, and consistent oil for manufacturing and commercial use. ",
-    image: "/zitelle/oil_bg.jpeg",
-    path: "/services/cooking-oil",
+      "TATA & BOBO is Zitelle Group’s plywood business, supplying  a wide range of plywood and board products for furniture making, interior finishing, and construction – focused on providing customers quality, dependable stock, smooth order execution and competitive pricing.",
+    image: "/zitelle/plywood5.jpg",
+    path: "/services/plywood",
   },
   {
     title: "Palm Kernel Cake",
@@ -53,13 +53,13 @@ const Business = () => {
       <PageHero
         title="Our Businesses"
         highlight=""
-        image="/zitelle/business1.jpg"
-        breadcrumb={
-          <>
-            <span className="page-hero__crumb">Home /</span>
-            <span className="page-hero__crumb--active">Business</span>
-          </>
-        }
+        image="/zitelle/new 3.png"
+        // breadcrumb={
+        //   <>
+        //     <span className="page-hero__crumb">Home /</span>
+        //     <span className="page-hero__crumb--active">Business</span>
+        //   </>
+        // }
       />
 
       <section className="business-pg">

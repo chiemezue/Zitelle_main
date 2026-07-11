@@ -26,13 +26,13 @@ const Career = () => {
         title="Career"
         highlight=""
         image="/zitelle/career.jpg"
-        breadcrumb={
-          <>
-            <span className="page-hero__crumb">Home /</span>
+        // breadcrumb={
+        //   <>
+        //     <span className="page-hero__crumb">Home /</span>
 
-            <span className="page-hero__crumb--active">Career</span>
-          </>
-        }
+        //     <span className="page-hero__crumb--active">Career</span>
+        //   </>
+        // }
       />
 
       <AboutIntro sections={careerSections} />

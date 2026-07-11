@@ -16,9 +16,9 @@ const ProductHero = ({
 
       <div className="product-hero__content">
         <div className="section-label">
-          <span>{label}</span>
+          {/* <span>{label}</span>
 
-          <div className="section-line"></div>
+          <div className="section-line"></div> */}
         </div>
 
         <h2 className="product-hero__title">{title}</h2>

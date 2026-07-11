@@ -25,11 +25,9 @@ const AboutSection = () => {
           <div className="section-line" />
         </div>
 
-        <TypingText
-          text="DRIVING GROWTH ACROSS INDUSTRIES, COMMUNITIES AND EVERYDAY LIFE."
-          speed={75}
-          className="about__title"
-        />
+        <h2 className="about__title">
+          DRIVING GROWTH ACROSS INDUSTRIES, COMMUNITIES AND EVERYDAY LIFE.
+        </h2>
 
         <p className="about-section__text">
           Zitelle Group is a Nigerian manufacturing group with a growing
@@ -54,7 +52,7 @@ const AboutSection = () => {
             <span>PKO</span>
 
             <strong>
-              <Counter end={38325} duration={6000} delay={1200} /> MTPA
+              <Counter end={40000} duration={6000} delay={1200} /> MTPA
             </strong>
           </div>
 
@@ -62,7 +60,7 @@ const AboutSection = () => {
             <span>PKC</span>
 
             <strong>
-              <Counter end={65700} duration={4000} delay={1400} /> MTPA
+              <Counter end={70000} duration={4000} delay={1400} /> MTPA
             </strong>
           </div>
 
@@ -86,7 +84,7 @@ const AboutSection = () => {
 
       <div className="about-section__image-wrapper">
         <img
-          src="/zitelle/who_we_are.jpeg"
+          src="/zitelle/DJI_0093.jpeg"
           alt="About Zitelle Group"
           className="about-section__image"
         />

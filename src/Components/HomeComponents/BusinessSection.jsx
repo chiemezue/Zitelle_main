@@ -36,7 +36,7 @@ const BusinessSection = () => {
     },
 
     {
-      title: " Palm Kernel Cake",
+      title: "Palm Kernel Cake",
       description:
         "Palm Kernel Cake is a valuable by-product of our palm kernel oil production process. At Zitelle Group, we process and supply PKC for agricultural and commercial use, particularly as a feed ingredient for cattle and livestock.",
       image: "/zitelle/pk_bg.jpeg",

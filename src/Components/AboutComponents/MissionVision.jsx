@@ -219,12 +219,12 @@ const visionMission = [
     ),
     label: "Core Values",
     values: [
-      "C - Customer First",
-      "R - Responsibility",
-      "I - Innovation",
-      "T - Tenacity",
-      "C - Community Empowerment",
-      "S - Sustainability",
+      "Customer First",
+      "Responsibility",
+      "Innovation",
+      "Tenacity",
+      "Community Empowerment",
+      "Sustainability",
     ],
   },
 ];

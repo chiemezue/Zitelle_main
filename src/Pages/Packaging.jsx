@@ -17,15 +17,15 @@ const Packaging = () => {
     <>
       <PageHero
         title="Packaging"
-        highlight="Solutions"
-        image="/zitelle/rubber2.jpg"
-        breadcrumb={
-          <>
-            <span className="page-hero__crumb">Home /</span>
+        // highlight="Solutions"
+        image="/zitelle/packaging_hero.jpeg"
+        // breadcrumb={
+        //   <>
+        //     <span className="page-hero__crumb">Home /</span>
 
-            <span className="page-hero__crumb--active">Packaging</span>
-          </>
-        }
+        //     <span className="page-hero__crumb--active">Packaging</span>
+        //   </>
+        // }
       />
 
       <ProductHero
@@ -36,7 +36,7 @@ const Packaging = () => {
         Our jerrycans are designed for practical handling, storage, and transportation of liquid products, making them suitable for businesses, distributors, manufacturers, and bulk packaging customers. 
 
         "
-        image="/zitelle/rubber1.jpg"
+        image="/zitelle/rubber1.jpeg"
         primaryText="Request A Quote"
         primaryLink="/contact"
         secondaryText="Speak To Sales"
@@ -45,14 +45,14 @@ const Packaging = () => {
 
       <ProductGrid
         label="Our Products"
-        title="What We Manufacture."
+        title="Our Plastic Product Line"
         products={[
           {
             id: 1,
             category: "Plastic Containers",
-            name: "4 Litres ",
-            description:
-              "Durable food-grade plastic container suitable for oil and liquid products.",
+            // name: "4 Litres ",
+            // description:
+            //   "Durable food-grade plastic container suitable for oil and liquid products.",
             image: "/zitelle/4litres.png",
             link: "/contact",
           },
@@ -60,29 +60,29 @@ const Packaging = () => {
           {
             id: 2,
             category: "Plastic Containers",
-            name: "9 Litres",
-            description:
-              "Strong and reliable packaging solution for cooking oil distribution.",
+            // name: "9 Litres",
+            // description:
+            //   "Strong and reliable packaging solution for cooking oil distribution.",
             image: "/zitelle/9litres.png",
             link: "/contact",
           },
 
           {
             id: 3,
-            category: "Industrial Packaging",
-            name: "18 Litres",
-            description:
-              "Heavy-duty plastic container for commercial and industrial use.",
+            category: "Plastic Containers",
+            // name: "18 Litres",
+            // description:
+            //   "Heavy-duty plastic container for commercial and industrial use.",
             image: "/zitelle/18litres.jpg",
             link: "/contact",
           },
 
           {
             id: 4,
-            category: "Industrial Packaging",
-            name: "25 Litre",
-            description:
-              "Large-capacity packaging designed for bulk storage and transportation.",
+            category: "Plastic Containers",
+            // name: "25 Litre",
+            // description:
+            //   "Large-capacity packaging designed for bulk storage and transportation.",
             image: "/zitelle/25litres.jpg",
             link: "/contact",
           },

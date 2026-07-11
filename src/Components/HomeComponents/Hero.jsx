@@ -51,17 +51,17 @@ const slides = [
   },
   {
     id: 4,
-    src: "/zitelle/hero4.jpg",
+    src: "/zitelle/IMG_0100.png",
     alt: "Zitelle Packaging Solutions",
     title: (
       <>
-        Quality at every <span className="hl-yellow">Stage</span>
+        Quality at every <span className="hl-yellow">Stage.</span>
         <br />
         Value in Every Process
       </>
     ),
-    sub: "We manufacture strong plastic jerrycans used for edible oils, liquid products, industrial packaging, and bulk commercial supply across multiple industries.",
-    cta: "Why Us",
+    sub: "We monitor our processes from sourcing to production and packaging, ensuring consistency across every product we deliver;",
+    cta: "Why Choose Us",
     link: "/why_us",
   },
 ];

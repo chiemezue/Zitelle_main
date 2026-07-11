@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import TypingText from "../TypingText";
 
 const AboutIntro = ({ sections }) => {
   const [activeImage, setActiveImage] = useState(sections?.[0]?.image);
@@ -51,15 +50,7 @@ const AboutIntro = ({ sections }) => {
             </div>
 
             {/* TITLE */}
-            {index === 0 ? (
-              <TypingText
-                text={section.title}
-                speed={75}
-                className="about__title"
-              />
-            ) : (
-              <h2 className="about__title">{section.title}</h2>
-            )}
+            <h2 className="about__title">{section.title}</h2>
 
             {/* TEXT */}
             <p className="section-text" style={{ whiteSpace: "pre-line" }}>

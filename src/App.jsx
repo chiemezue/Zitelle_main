@@ -18,6 +18,7 @@ import BlogSinglePage from "./Pages/BlogSinglePage";
 import { BlogContext } from "./Components/BlogComponents/BlogContext";
 import api from "./services/api";
 import { Toaster } from "react-hot-toast";
+import PalmKernel from "./Pages/PalmKernel";
 
 const App = () => {
   const [blog, setBlog] = useState([]);
@@ -58,6 +59,7 @@ const App = () => {
             <Route path="/services/soap" element={<Soap />} />
             <Route path="/services/cooking-oil" element={<CookingOil />} />
             <Route path="/services/packaging" element={<Packaging />} />
+            <Route path="/services/pk" element={<PalmKernel />} />
           </Route>
         </Routes>
       </BrowserRouter>

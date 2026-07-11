@@ -16,13 +16,13 @@ const Plywood = () => {
         title="PlyWood"
         highlight=""
         image="/zitelle/plywood6.jpg"
-        breadcrumb={
-          <>
-            <span className="page-hero__crumb">Home /</span>
+        // breadcrumb={
+        //   <>
+        //     <span className="page-hero__crumb">Home /</span>
 
-            <span className="page-hero__crumb--active">Tata & Bobo</span>
-          </>
-        }
+        //     <span className="page-hero__crumb--active">Tata & Bobo</span>
+        //   </>
+        // }
       />
       <ProductHero
         label="About"
@@ -36,51 +36,6 @@ const Plywood = () => {
       />
       <Tata />
       <QuoteForm />
-      {/* <ProductGrid
-        label="Our Products"
-        title="What We Stock."
-        products={[
-          {
-            id: 1,
-            category: "Fresh Core",
-            name: "HDF Plywood",
-            description: "Available Thickness: 4mm, 9mm, 12mm",
-            image: "/zitelle pictures/plywood1.jpg",
-            price: "$300/pc",
-            link: "/contact",
-          },
-
-          {
-            id: 2,
-            category: "Fresh Core",
-            name: "Marine Board",
-            description: "Available Thickness: 6mm, 12mm, 18mm",
-            image: "/zitelle pictures/plywood2.jpg",
-            price: "$350/pc",
-            link: "/contact",
-          },
-
-          {
-            id: 3,
-            category: "Fresh Core",
-            name: "Block Board",
-            description: "Premium construction grade",
-            image: "/zitelle pictures/plywood3.jpg",
-            price: "$280/pc",
-            link: "/contact",
-          },
-
-          {
-            id: 4,
-            category: "Fresh Core",
-            name: "MDF Board",
-            description: "Smooth finish for interiors",
-            image: "/zitelle pictures/plywood3.jpg",
-            price: "$320/pc",
-            link: "/contact",
-          },
-        ]}
-      /> */}
 
       <WhoWeServe
         label="Who We Serve"

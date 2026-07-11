@@ -3,16 +3,16 @@ import DarkReusableSection from "../DarkReusableSection";
 const ChooseSoap = () => {
   return (
     <DarkReusableSection
-      label="Zitelle Soap"
-      title="WHY CHOOSE ZITELLE SOAP?"
-      text="Customers choose Zitelle Soap because it is practical, versatile, affordable, and reliable."
+      label="THE ZITELLE SOAP ADVANTAGE"
+      title="Practical. Versatile. Made for everyday use."
+      text="Customers choose Zitelle Soap because it is designed to meet everyday cleaning needs with dependable quality and reliable supply."
       image="/zitelle/soap3.jpg"
       items={[
-        "Integrated production",
-        "Multipurpose use",
-        "Consistent quality",
-        "Affordable everyday value ",
-        "Reliable supply ",
+        "Multipurpose Use",
+        "Consistent Quality",
+        "Affordable Everyday Value",
+        "Reliable Supply",
+        "Integrated Production",
       ]}
     />
   );

@@ -11,20 +11,20 @@ const CookingOil = () => {
   return (
     <>
       <PageHero
-        title="Cooking"
+        title="Refined Edible"
         highlight="Oil"
         image="/zitelle/oilhero.jpg"
-        breadcrumb={
-          <>
-            <span className="page-hero__crumb">Home /</span>
+        // breadcrumb={
+        //   <>
+        //     <span className="page-hero__crumb">Home /</span>
 
-            <span className="page-hero__crumb--active">Cooking Oil</span>
-          </>
-        }
+        //     <span className="page-hero__crumb--active">Cooking Oil</span>
+        //   </>
+        // }
       />
 
       <ProductHero
-        label="About"
+        label=""
         title="Palm Kernel Refined Oil"
         text="Our refined palm Kernel Oil is processed to meet the needs of businesses that require a reliable, versatile, and consistent oil for manufacturing and commercial use. With its clean appearance, stable quality, and wide range of applications, it supports industries such as soap production, food processing, cosmetics, and other industrial formulations."
         image="/zitelle/oil4.jpg"
@@ -35,46 +35,42 @@ const CookingOil = () => {
       />
 
       <ProductGrid
-        label="Our Products"
-        title="What We Produce."
+        label=""
+        title="Our Oil Product"
         products={[
           {
             id: 1,
-            category: "Cooking Oil",
+            category: "",
             name: "4 Litres",
-            description:
-              "Refined vegetable oil suitable for everyday cooking and frying.",
-            image: "/zitelle/4litres oil.jpg",
+            description: "",
+            image: "/zitelle/10litres_oil.jpeg",
             link: "/contact",
           },
 
           {
             id: 2,
-            category: "Cooking Oil",
-            name: "9 Litres",
-            description:
-              "Convenient packaging designed for daily household use.",
-            image: "/zitelle/9litres oil.jpg",
+            category: "",
+            name: "10 Litres",
+            description: "",
+            image: "/zitelle/IMG_7850.png",
             link: "/contact",
           },
 
           {
             id: 3,
-            category: "Cooking Oil",
+            category: "",
             name: "18 Litres",
-            description:
-              "Large-volume supply for restaurants and food businesses.",
-            image: "/zitelle/18litres oil.jpg",
+            description: "",
+            image: "/zitelle/IMG_7897.png",
             link: "/contact",
           },
 
           {
             id: 4,
-            category: "Cooking Oil",
+            category: "",
             name: "25 Litres",
-            description:
-              "Consistent quality oil developed for high-volume frying.",
-            image: "/zitelle/25litres oil.jpg",
+            description: "",
+            image: "/zitelle/IMG_7939.png",
             link: "/contact",
           },
         ]}
@@ -84,7 +80,7 @@ const CookingOil = () => {
       <WhoWeServe
         label="Who We Serve"
         title="Supplying Kitchens And Businesses"
-        image="/zitelle/oil5.jpg"
+        image="/zitelle/DJI_0036.png"
         items={[
           {
             icon: <Package size={20} />,

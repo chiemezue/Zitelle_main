@@ -4,7 +4,7 @@ const features = [
     title: "Integrated Manufacturing ",
     text: "Our divisions are connected in ways that create stronger control and better consistency. We produce oil used within our soap manufacturing, and our plastic division manufactures jerrycans from scratch for both Zitelle Oil and external customers.",
 
-    image: "/zitelle/machine1.jpg",
+    image: "/zitelle/IMG_8389.png",
   },
 
   {
@@ -12,7 +12,7 @@ const features = [
     title: "Quality at Every Stage ",
     text: "Quality is built into our process, not added at the end. Our teams monitor production, carry out checks, and maintain documentation to support consistency and customer confidence.",
 
-    image: "/zitelle/lab1.jpg",
+    image: "/zitelle/quality_why_us.jpeg",
   },
 
   {
@@ -20,7 +20,7 @@ const features = [
     title: "Reliable Supply",
     text: "We understand that customers need more than good products – they need products they can access consistently. Our manufacturing and distribution approach is designed to support dependable supply for retailers, wholesalers, distributors and commercial buyers.",
 
-    image: "/zitelle/warehouse.jpg",
+    image: "/zitelle/DJI_0036.png",
   },
   {
     number: "04",

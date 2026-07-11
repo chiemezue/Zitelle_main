@@ -93,7 +93,9 @@ const Footer = () => {
             <li>
               <Link to="/services/cooking-oil">Oil</Link>
             </li>
-
+            <li>
+              <Link to="/services/soap">Soap</Link>
+            </li>
             <li>
               <Link to="/services/plywood">Plywood</Link>
             </li>
@@ -101,9 +103,8 @@ const Footer = () => {
             <li>
               <Link to="/services/packaging">Packaging</Link>
             </li>
-
             <li>
-              <Link to="/services/soap">Soap</Link>
+              <Link to="/services/pk">Palm Kernel Cake</Link>
             </li>
           </ul>
         </div>

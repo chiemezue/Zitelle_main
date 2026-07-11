@@ -14,20 +14,20 @@ const Soap = () => {
         title="Soap"
         highlight="Manufacturing"
         image="/zitelle/soap4.jpg"
-        breadcrumb={
-          <>
-            <span className="page-hero__crumb">Home /</span>
+        // breadcrumb={
+        //   <>
+        //     <span className="page-hero__crumb">Home /</span>
 
-            <span className="page-hero__crumb--active">Soap Manufacturing</span>
-          </>
-        }
+        //     <span className="page-hero__crumb--active">Soap Manufacturing</span>
+        //   </>
+        // }
       />
 
       <ProductHero
-        label="About"
-        title="Made for Everyday Cleanliness "
-        text="Zitelle Soap is a versatile multipurpose soap made for everyday cleaning needs. Strong enough for laundry and practical washing, yet suitable for personal bathing use, it is designed to serve households, businesses, and everyday users who need one dependable soap for different purposes."
-        image="/zitelle/soap3.jpg"
+        label=""
+        title="Feel The Difference With Every Wash"
+        text="Made through a controlled production process using carefully selected oil-based raw materials, our soap is designed to support cleanliness, affordability. From production to packaging, each batch is monitored to help ensure reliable performance and customer satisfaction"
+        image="/zitelle/IMG_8335.jpeg"
         primaryText="Request A Quote"
         primaryLink="/contact"
         secondaryText="Speak To Sales"
@@ -35,46 +35,48 @@ const Soap = () => {
       />
 
       <ProductGrid
-        label="Our Products"
-        title="What We Produce."
+        label=""
+        title="Our Soap Line"
         products={[
           {
             id: 1,
-            category: "Household Care",
-            name: "Multipurpose Bar Soap",
-            description:
-              "Suitable for laundry, dishwashing, and general household cleaning.",
-            image: "/zitelle/soap6.jpg",
+            // category: "Household Care",
+            // name: "Multipurpose Bar Soap",
+
+            image: "/zitelle/IMG_0420.png",
             link: "/contact",
           },
 
           {
             id: 2,
-            category: "Personal Care",
-            name: "Premium Bath Soap",
-            description:
-              "Gentle cleansing soap formulated for everyday personal hygiene.",
-            image: "/zitelle/soap7.jpg",
+            // category: "Personal Care",
+            // name: "Premium Bath Soap",
+
+            image: "/zitelle/IMG_0401.png",
             link: "/contact",
           },
 
           {
             id: 3,
-            category: "Commercial Supply",
-            name: "Industrial Cleaning Soap",
-            description:
-              "Reliable cleaning solution for hotels, schools, and institutions.",
-            image: "/zitelle/soap8.jpg",
+            // category: "Commercial Supply",
+            // name: "Industrial Cleaning Soap",
+
+            image: "/zitelle/IMG_0358.png",
             link: "/contact",
           },
 
           {
             id: 4,
-            category: "Household Care",
-            name: "Detergent Soap",
-            description:
-              "Effective stain removal with long-lasting cleaning performance.",
-            image: "/zitelle/soap9.jpg",
+            // category: "Household Care",
+            // name: "Detergent Soap",
+            image: "/zitelle/IMG_0296.png",
+            link: "/contact",
+          },
+          {
+            id: 5,
+            // category: "Household Care",
+            // name: "Detergent Soap",
+            image: "/zitelle/IMG_0234.png",
             link: "/contact",
           },
         ]}

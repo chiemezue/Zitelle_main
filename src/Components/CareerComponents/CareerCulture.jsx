@@ -4,6 +4,7 @@ import {
   BadgeCheck,
   TrendingUp,
   HardHat,
+  Lightbulb,
 } from "lucide-react";
 
 const cultureItems = [
@@ -31,6 +32,11 @@ const cultureItems = [
     icon: <HardHat size={34} strokeWidth={1.8} />,
     title: "Safety & Responsibility",
     text: "Creating a safe, responsible, and productive working environment is a priority across all our operations.",
+  },
+  {
+    icon: <Lightbulb size={34} strokeWidth={1.8} />,
+    title: "Ownership Culture",
+    text: "We encourage every team member to think beyond their role, take initiative, solve problems, and treat the company’s progress as a shared responsibility.",
   },
 ];
 
