@@ -15,8 +15,7 @@ const teamMembers = [
   {
     name: "James Monweya",
     role: "Chief Financial Controller",
-    image:
-      "https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=1200&auto=format&fit=crop",
+    image: "/zitelle/James Monweya.png",
   },
   {
     name: "Stella Akunyiba ",
@@ -43,8 +42,7 @@ const teamMembers = [
   {
     name: "Sonia Enumah",
     role: "Head of Administration",
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop",
+    image: "/zitelle/Sonia Enumah.png",
   },
   {
     name: "Kenneth Anuforo",
@@ -59,6 +57,7 @@ const teamMembers = [
   {
     name: "Ebuka Dontaus Obinwa",
     role: "Head of Sales & Marketing LAGOS",
+    image: "/zitelle/Ebuka Dontaus Obinwa.png",
   },
   {
     name: "Romanus Idiemerio",
