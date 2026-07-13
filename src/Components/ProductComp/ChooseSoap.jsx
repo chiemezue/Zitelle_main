@@ -6,7 +6,7 @@ const ChooseSoap = () => {
       label="THE ZITELLE SOAP ADVANTAGE"
       title="Practical. Versatile. Made for everyday use."
       text="Customers choose Zitelle Soap because it is designed to meet everyday cleaning needs with dependable quality and reliable supply."
-      image="/zitelle/soap3.jpg"
+      image="/zitelle/IMG_8293.png"
       items={[
         "Multipurpose Use",
         "Consistent Quality",

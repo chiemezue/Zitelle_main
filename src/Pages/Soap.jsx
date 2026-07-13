@@ -82,38 +82,6 @@ const Soap = () => {
         ]}
       />
       <ChooseSoap />
-
-      {/* <WhoWeServe
-        label="Who We Serve"
-        title="Made For Homes And Businesses"
-        image="/zitelle pictures/soap2.jpg"
-        items={[
-          {
-            icon: <Home size={20} />,
-            text: "Households and families across Nigeria",
-          },
-
-          {
-            icon: <Store size={20} />,
-            text: "Retail stores and supermarkets",
-          },
-
-          {
-            icon: <ShoppingCart size={20} />,
-            text: "Wholesalers and distributors",
-          },
-
-          {
-            icon: <Building2 size={20} />,
-            text: "Hotels, schools, and institutions",
-          },
-
-          {
-            icon: <Warehouse size={20} />,
-            text: "Bulk buyers and commercial businesses",
-          },
-        ]}
-      /> */}
     </>
   );
 };
