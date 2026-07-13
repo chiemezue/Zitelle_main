@@ -13,7 +13,7 @@ const CookingOil = () => {
       <PageHero
         title="Refined Edible"
         highlight="Oil"
-        image="/zitelle/oilhero.jpg"
+        image="/zitelle/oil_page.jpeg"
         // breadcrumb={
         //   <>
         //     <span className="page-hero__crumb">Home /</span>

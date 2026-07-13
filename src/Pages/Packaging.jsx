@@ -50,7 +50,7 @@ const Packaging = () => {
           {
             id: 1,
             category: "Plastic Containers",
-            // name: "4 Litres ",
+            name: "4 Litres ",
             // description:
             //   "Durable food-grade plastic container suitable for oil and liquid products.",
             image: "/zitelle/4litres.png",
@@ -60,7 +60,7 @@ const Packaging = () => {
           {
             id: 2,
             category: "Plastic Containers",
-            // name: "9 Litres",
+            name: "10 Litres",
             // description:
             //   "Strong and reliable packaging solution for cooking oil distribution.",
             image: "/zitelle/9litres.png",
@@ -70,7 +70,7 @@ const Packaging = () => {
           {
             id: 3,
             category: "Plastic Containers",
-            // name: "18 Litres",
+            name: "18 Litres",
             // description:
             //   "Heavy-duty plastic container for commercial and industrial use.",
             image: "/zitelle/18litres.jpg",
@@ -80,7 +80,7 @@ const Packaging = () => {
           {
             id: 4,
             category: "Plastic Containers",
-            // name: "25 Litre",
+            name: "25 Litres",
             // description:
             //   "Large-capacity packaging designed for bulk storage and transportation.",
             image: "/zitelle/25litres.jpg",
