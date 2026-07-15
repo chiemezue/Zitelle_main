@@ -15,7 +15,7 @@ const Plywood = () => {
       <PageHero
         title="PlyWood"
         highlight=""
-        image="/zitelle/plywood_bg.png"
+        image="/zitelle/commercial.png"
         // breadcrumb={
         //   <>
         //     <span className="page-hero__crumb">Home /</span>
@@ -40,7 +40,7 @@ const Plywood = () => {
       <WhoWeServe
         label="Who We Serve"
         title="Built For The People Who Build"
-        image="/zitelle/plywood_bg.png"
+        image="/zitelle/commercial.png"
         items={[
           {
             icon: <Sofa size={20} />,

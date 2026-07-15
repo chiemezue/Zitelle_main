@@ -48,7 +48,7 @@ const products = [
   {
     id: "commercial",
     name: "Commercial Plywood",
-    image: "/zitelle/commercial.png",
+    image: "/zitelle/plywood_bg.png",
     description:
       "General-purpose plywood for furniture and construction projects.",
     variants: ["Brown"],
