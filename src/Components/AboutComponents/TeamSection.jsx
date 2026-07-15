@@ -9,7 +9,7 @@ const teamMembers = [
   },
   {
     name: "Frances Okechukwu-Anolue",
-    role: "Managing Director",
+    role: "Director of Operations",
     image: "/zitelle/Frances Okechukwu-Anolue.jpeg",
   },
   {

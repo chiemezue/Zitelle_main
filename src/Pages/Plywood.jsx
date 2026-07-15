@@ -15,7 +15,7 @@ const Plywood = () => {
       <PageHero
         title="PlyWood"
         highlight=""
-        image="/zitelle/plywood6.jpg"
+        image="/zitelle/plywood_bg.png"
         // breadcrumb={
         //   <>
         //     <span className="page-hero__crumb">Home /</span>
@@ -28,7 +28,7 @@ const Plywood = () => {
         label="About"
         title="Quality Plywood. Dependable Stock."
         text="TATA & BOBO is Zitelle Group's plywood business, supplying a wide range of plywood and board products for furniture making, interior finishing, and construction focused on providing customers quality, dependable stock, smooth order execution and competitive pricing."
-        image="/zitelle/plywood7.jpg"
+        image="/zitelle/plywood_hero.png"
         primaryText="Request A Quote"
         primaryLink="/contact"
         secondaryText="Speak To Sales"
@@ -40,7 +40,7 @@ const Plywood = () => {
       <WhoWeServe
         label="Who We Serve"
         title="Built For The People Who Build"
-        image="/zitelle/plywood1.jpg"
+        image="/zitelle/plywood_bg.png"
         items={[
           {
             icon: <Sofa size={20} />,
