@@ -39,32 +39,32 @@ const App = () => {
 
     fetchPosts();
   }, []);
-  return (
-    <BlogContext.Provider value={{ blog, setBlog, loading }}>
-      <Toaster position="top-right" />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route element={<MainLayout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/why_us" element={<WhyUs />} />
-            <Route path="/business" element={<Business />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/career/apply" element={<CareerForm />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/blog" element={<BlogPage />} />
-            <Route path="/blog/:slug" element={<BlogSinglePage />} />
-            <Route path="/services/plywood" element={<Plywood />} />
-            <Route path="/services/soap" element={<Soap />} />
-            <Route path="/services/cooking-oil" element={<CookingOil />} />
-            <Route path="/services/packaging" element={<Packaging />} />
-            <Route path="/services/pk" element={<PalmKernel />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </BlogContext.Provider>
-  );
+  // return (
+  //   <BlogContext.Provider value={{ blog, setBlog, loading }}>
+  //     <Toaster position="top-right" />
+  //     <BrowserRouter>
+  //       <ScrollToTop />
+  //       <Routes>
+  //         <Route element={<MainLayout />}>
+  //           <Route path="/" element={<Home />} />
+  //           <Route path="/about" element={<About />} />
+  //           <Route path="/why_us" element={<WhyUs />} />
+  //           <Route path="/business" element={<Business />} />
+  //           <Route path="/careers" element={<Careers />} />
+  //           <Route path="/career/apply" element={<CareerForm />} />
+  //           <Route path="/contact" element={<Contact />} />
+  //           <Route path="/blog" element={<BlogPage />} />
+  //           <Route path="/blog/:slug" element={<BlogSinglePage />} />
+  //           <Route path="/services/plywood" element={<Plywood />} />
+  //           <Route path="/services/soap" element={<Soap />} />
+  //           <Route path="/services/cooking-oil" element={<CookingOil />} />
+  //           <Route path="/services/packaging" element={<Packaging />} />
+  //           <Route path="/services/pk" element={<PalmKernel />} />
+  //         </Route>
+  //       </Routes>
+  //     </BrowserRouter>
+  //   </BlogContext.Provider>
+  // );
 };
 
 export default App;
